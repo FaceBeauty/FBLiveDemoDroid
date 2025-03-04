@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 首页 -->
+    <string name="beauty">Beauty</string>
+    <string name="makeup">Makeup</string>
+
+    <string name="gesture">Gesture</string>
+    <string name="take_photo">TakePhoto</string>
+
+    <string name="beauty_skin">Skin</string>
+    <string name="beauty_shape">Reshape</string>
+    <string name="beauty_hair">Hair</string>
+    <string name="beauty_makeup">Makeup</string>
+    <string name="beauty_makeup_style">MakeupStyle</string>
+    <string name="beauty_body">Body</string>
+    <string name="beauty_style">Style</string>
+
+    <string name="reset">Restore</string>
+    <string name="is_reset_to_default">Reset all parameters in this module to default?</string>
+    <string name="is_reset_to_default_all">Reset all parameters to default？</string>
+    <string name="confirm">Yes</string>
+    <string name="cancel">No</string>
+
+    <string name="face_beauty">FaceBeauty</string>
+    <string name="face_beauty_and_shape">FaceBeauty</string>
+    <string name="whiteness">Whiteness</string>
+    <string name="blurriness">Exfoliating</string>
+    <string name="precise_skin">PreciseSkin</string>
+    <string name="rosiness">Ruddy</string>
+    <string name="clearness">Distinctive</string>
+    <string name="brightness">Brightness</string>
+
+    <string name="face_shape">FaceShape</string>
+    <string name="eye_enlarging">Big eye</string>
+    <string name="cheek_thinning">Thin face</string>
+    <string name="cheek_narrowing">Narrow face</string>
+    <string name="cheek_bone_thinning">Cheekbones</string>
+    <string name="jaw_bone_thinning">Lower jaw</string>
+    <string name="temple_enlarging">Temple</string>
+    <string name="head_lessening">Small head</string>
+    <string name="face_lessening">Small face</string>
+    <string name="chin_trimming">Chin</string>
+    <string name="philtrum_trimming">Shrink in</string>
+    <string name="forehead_trimming">Hairline</string>
+    <string name="eye_sapcing">Eye spacing</string>
+    <string name="eye_corner_trimming">Eye corner</string>
+    <string name="eye_corner_enlarging">Canthus</string>
+    <string name="nose_enlarging">Long nose</string>
+    <string name="nose_thinning">Thin nose</string>
+    <string name="nose_apex_lessening">Nose</string>
+    <string name="nose_root_enlarging">Flocks</string>
+    <string name="mouth_trimming">Mouth</string>
+    <string name="mouth_smiling">Smiling lips</string>
+    <string name="undereye_circles">Black eye</string>
+    <string name="short_face">Short face</string>
+    <string name="nasolabial_fold">Wrinkles</string>
+    <string name="eyes_light">Light eye</string>
+    <string name="teeth_white">White teeth</string>
+    <string name="tracker1">Tracker1</string>
+    <string name="tracker2">Tracker2</string>
+    <string name="tracker3">Tracker3</string>
+
+    <string name="lipstick">Lipstick</string>
+    <string name="eyebrow">Eye Brow</string>
+    <string name="blush">Blush</string>
+    <string name="eyeshadow">Eye Shadow</string>
+    <string name="eyeline">Eye Line</string>
+    <string name="eyelash">Eye Lash</string>
+    <string name="beautypupils">Pupils</string>
+
+    <string name="longleg">Long Leg</string>
+    <string name="bodythin">Thin Body</string>
+    <string name="waistslim">Slim Waist</string>
+    <string name="shoulderslim">Slim Shoulder</string>
+    <string name="hiptrim">Trim Hip</string>
+    <string name="thighthin">Thin Thigh</string>
+    <string name="neckslim">Slim Neck</string>
+    <string name="chestenlarge">Enlarge Chest</string>
+
+    <string name="filter">Filter</string>
+    <string name="beauty_filter">BeautyFilter</string>
+
+    <string name="name_chunzhen" translatable="false">chunzhen</string>
+    <string name="name_white" translatable="false">white</string>
+    <string name="name_qingxin" translatable="false">qingxin</string>
+    <string name="name_romantic" translatable="false">langman</string>
+    <string name="name_rixi" translatable="false">rixi</string>
+    <string name="name_qingliang" translatable="false">qingliang</string>
+    <string name="name_bailan" translatable="false">bailan</string>
+    <string name="name_landiao" translatable="false">landiao</string>
+    <string name="name_chaotuo" translatable="false">chaotuo</string>
+    <string name="name_fennen" translatable="false">fennen</string>
+    <string name="name_standard_filter" translatable="false">biaozhun</string>
+    <string name="name_huaijiu" translatable="false">huaijiu</string>
+    <string name="name_weimei" translatable="false">weimei</string>
+    <string name="name_xiangfen" translatable="false">xiangfen</string>
+    <string name="name_yinghong" translatable="false">yinghong</string>
+    <string name="name_yuanqi" translatable="false">yuanqi</string>
+    <string name="name_yunshang" translatable="false">yunshang</string>
+
+    <string name="arprops">ARProps</string>
+    <string name="sticker">Sticker</string>
+    <string name="face">Face</string>
+    <string name="mask">Mask</string>
+    <string name="gift">Gift</string>
+
+    <string name="hair_none">NONE</string>
+    <string name="hair_shenmizi">shenmizi</string>
+    <string name="hair_qiaokeli">qiaokeli</string>
+    <string name="hair_qingmuzong">qingmuzong</string>
+    <string name="hair_jiaotangzong">jiaotangzong</string>
+    <string name="hair_fengmichunzong">fengmichunzong</string>
+    <string name="hair_qianjinzong">qianjinzong</string>
+    <string name="hair_meiguijin">meiguijin</string>
+    <string name="hair_yamabaijin">yamabaijin</string>
+    <string name="hair_luoriju">luoriju</string>
+    <string name="hair_yamaqianju">yamaqianju</string>
+    <string name="hair_fugumeigui">fugumeigui</string>
+    <string name="hair_shenmeigui">shenmeigui</string>
+    <string name="hair_yanhuiwuzi">yanhuiwuzi</string>
+    <string name="hair_fenmeitianzong">fenmeitianzong</string>
+    <string name="hair_wumaixiangyu">wumaixiangyu</string>
+    <string name="hair_kongquelan">kongquelan</string>
+    <string name="hair_wumailanhui">wumailanhui</string>
+    <string name="hair_yamahuizong">yamahuizong</string>
+    <string name="hair_yamaqianhui">yamaqianhui</string>
+
+    <string name="watermark">Watermark</string>
+    <string name="portrait">Portrait</string>
+    <string name="portrait_ai">AIProprait</string>
+    <string name="portrait_green">GreenProprait</string>
+    <string name="portrait_people">PeopleProprait</string>
+
+    <string name="none">NONE</string>
+    <string name="delete">delete</string>
+    <string name="name_none" translatable="false">""</string>
+
+    <string name="blurriness_vague">Hazy</string>
+    <string name="blurriness_precise">Fine</string>
+    <string name="v_face">V face</string>
+    <string name="forehead">Forehead</string>
+    <string name="circle_eye">Round eyes</string>
+
+    <string name="style_jingdian">Style1</string>
+    <string name="style_tianxin">Style10</string>
+    <string name="style_qing_leng">Style9</string>
+    <string name="style_weisuyan">Style8</string>
+    <string name="style_zhigan">Style7</string>
+    <string name="style_chulian">Style6</string>
+    <string name="style_riza">Style5</string>
+    <string name="style_fugu">Style4</string>
+    <string name="style_nvsheng">Style3</string>
+    <string name="style_wanghong">Style2</string>
+
+    <string name="makeup_qcbh">CM01</string>
+    <string name="makeup_hxmr">CM02</string>
+    <string name="makeup_qtz">CM03</string>
+    <string name="makeup_bl">CM04</string>
+    <string name="makeup_ld">CM05</string>
+    <string name="makeup_yqsn">CM06</string>
+    <string name="makeup_nt">CM07</string>
+    <string name="makeup_cyz">CM08</string>
+
+
+
+    <string name="filter_beauty">StyleFilter</string>
+
+    <string name="filter_effect">SpecialFilter</string>
+    <string name="effect_none">Original</string>
+
+    <string name="makeup_none">Original</string>
+    <string name="filter_none">Orignal</string>
+
+    <string name="filter_funny">funnyFilter</string>
+    <string name="funny_et">ET</string>
+    <string name="funny_big_nose">BigNose</string>
+    <string name="funny_big_mouth">BigMouth</string>
+    <string name="funny_fangxinglian">SquareFace</string>
+    <string name="funny_big_head">BigHead</string>
+    <string name="funny_dudu">PearFace</string>
+    <string name="funny_doudou">SmallEye</string>
+    <string name="funny_snake">ThinFace</string>
+    <string name="threeD">threeD</string>
+    <string name="edit">Edit</string>
+    <string name="background">Background</string>
+    <string name="restore">Restore</string>
+    <string name="similarity">Similarity</string>
+    <string name="smoothness">Smoothness</string>
+    <string name="alpha">Alpha</string>
+    <string name="decolor">Decolor</string>
+
+    <string name="lip_softpink">softpink</string>
+    <string name="lip_cameobrown">cameobrown</string>
+    <string name="lip_yuanqiorange">yuanqiorange</string>
+    <string name="lip_red">red</string>
+    <string name="lip_crimson">crimson</string>
+    <string name="lip_caramel">caramel</string>
+
+    <string name="eyebrow_softpinkbrown">softpinkbrown</string>
+    <string name="eyebrow_gentleblack">gentelblack</string>
+    <string name="eyebrow_softbrown">softbrown</string>
+    <string name="eyebrow_darkbrown">darkbrown</string>
+
+    <string name="blush_richang">blush1</string>
+    <string name="blush_yuanqi">blush1</string>
+    <string name="blush_jianling">blush1</string>
+    <string name="blush_fenwei">blush1</string>
+    <string name="blush_rixi">blush1</string>
+    <string name="blush_mitao">blush1</string>
+
+
+    <string name="only_png_images">Only compatible with png format background images</string>
+</resources>

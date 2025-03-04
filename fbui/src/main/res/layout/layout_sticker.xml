@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:ignore="Suspicious0dp">
+
+            <com.shizhefei.view.indicator.ScrollIndicatorView
+                android:id="@+id/indicatorView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line"
+            android:alpha="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+        <com.shizhefei.view.viewpager.SViewPager
+            android:id="@+id/fb_pager"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

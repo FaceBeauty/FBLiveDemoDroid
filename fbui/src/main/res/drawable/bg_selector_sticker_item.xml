@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <!-- 圆形背景 -->
+        <shape android:shape="oval">
+            <!-- 设置边框颜色和宽度 -->
+            <stroke android:width="2dp" android:color="@color/ht_selected" />
+            <!-- 设置背景颜色 -->
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+    <!-- 默认状态下的背景 -->
+    <item>
+        <!-- 圆形背景 -->
+        <shape android:shape="oval">
+            <!-- 设置背景颜色为透明 -->
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</selector>

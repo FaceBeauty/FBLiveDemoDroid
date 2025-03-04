@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nimo.fb_effect.view.FBSquareConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="63dp"
+    android:layout_height="63dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/bg_selector_sticker_item">
+
+    <com.nimo.fb_effect.view.FBCircleImageView
+        android:id="@+id/thumbIV"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_circle="27dp"/>
+
+    <ImageView
+        android:id="@+id/deleteIv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:src="@drawable/icon_watermark_upload_delete"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/loadingBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:src="@drawable/bg_sticker_download"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/loadingIV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="21dp"
+        android:contentDescription="@null"
+        android:src="@mipmap/icon_downloading"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ImageView
+        android:id="@+id/downloadIV"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_download"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+</com.nimo.fb_effect.view.FBSquareConstraintLayout>
+

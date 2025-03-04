@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <com.nimo.fb_effect.view.FBBarView
+        android:id="@+id/fb_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+
+            <com.shizhefei.view.indicator.ScrollIndicatorView
+                android:id="@+id/indicatorView"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/iv_clean"
+                />
+            <ImageView
+                android:id="@+id/iv_clean"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_centerVertical="true"/>
+            <View
+                android:id="@+id/divide"
+                android:layout_width="1dp"
+                android:background="@color/divide_line"
+                android:layout_height="16dp"
+                android:layout_toRightOf="@+id/iv_clean"
+                android:layout_centerVertical="true"/>
+            <ImageView
+                android:id="@+id/iv_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_gs_green"
+                android:layout_toLeftOf="@+id/iv_blue"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/iv_selected1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_gs_selected"
+                android:layout_toLeftOf="@+id/iv_blue"
+                android:layout_marginEnd="16dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/iv_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_gs_blue"
+                android:layout_toLeftOf="@+id/iv_red"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/iv_selected2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_gs_selected"
+                android:layout_toLeftOf="@+id/iv_red"
+                android:layout_marginEnd="16dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/iv_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_gs_red"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/iv_selected3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_gs_selected"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="16dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line"
+            android:alpha="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+        <com.shizhefei.view.viewpager.SViewPager
+            android:id="@+id/fb_pager"
+            android:layout_width="match_parent"
+            android:layout_height="213dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
