@@ -19,9 +19,9 @@
         android:theme="@style/AppTheme"
         android:name="com.nimo.facebeauty.FBApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_foreground"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true">
         <activity
             android:name="com.nimo.facebeauty.activity.Camera2Activity"
