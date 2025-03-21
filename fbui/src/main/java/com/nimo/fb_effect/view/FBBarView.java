@@ -118,13 +118,13 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
      * 同步滑动条参数
      */
     @Subscribe(thread = EventThread.MAIN_THREAD,
-               tags = { @Tag(FBEventAction.ACTION_SYNC_PROGRESS) })
+            tags = { @Tag(FBEventAction.ACTION_SYNC_PROGRESS) })
     public void syncProgress(Object o) {
 
 
         //美颜——美颜
         if (FBState.currentViewState == FBViewState.BEAUTY
-            && FBState.currentSecondViewState == FBViewState.BEAUTY_SKIN) {
+                && FBState.currentSecondViewState == FBViewState.BEAUTY_SKIN) {
 
             //美颜效果未选中，隐藏滑动条
             if (FBState.getCurrentBeautySkin() == FBBeautyKey.NONE) {
@@ -169,7 +169,7 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
 
         //美颜——美型
         if (FBState.currentViewState == FBViewState.BEAUTY
-            && FBState.currentSecondViewState == FBViewState.BEAUTY_FACE_TRIM) {
+                && FBState.currentSecondViewState == FBViewState.BEAUTY_FACE_TRIM) {
 
             //美型效果未选中，隐藏滑动条
             if (FBUICacheUtils.beautyFaceTrimPosition() == -1) {
@@ -180,7 +180,7 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
             }
 
             int progress = FBUICacheUtils
-                .beautyFaceTrimValue(FBState.currentFaceTrim);
+                    .beautyFaceTrimValue(FBState.currentFaceTrim);
             Log.e("当前模块:", FBState.currentFaceTrim.name());
             Log.e("美型滑动参数同步:", progress + "");
             fbSeekBar.setProgress(progress);
@@ -252,9 +252,10 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
             }
 
             // setVisibility(VISIBLE);
-            styleNormal(FBUICacheUtils.getBeautyFilterValue(FBState.currentStyleFilter.getName()));
+//            styleNormal(FBUICacheUtils.getBeautyFilterValue(FBState.currentStyleFilter.getName()));
+            styleNormal(FBUICacheUtils.getBeautyFilterValue(FBUICacheUtils.getBeautyFilterName()));
             Log.d("filtername", "syncProgress: " + FBState.currentStyleFilter.getName());
-            fbSeekBar.setProgress(FBUICacheUtils.getBeautyFilterValue(FBState.currentStyleFilter.getName()));
+            fbSeekBar.setProgress(FBUICacheUtils.getBeautyFilterValue(FBUICacheUtils.getBeautyFilterName()));
             return;
         }
 
@@ -267,7 +268,7 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
      * @param o
      */
     @Subscribe(thread = EventThread.MAIN_THREAD,
-               tags = { @Tag(FBEventAction.ACTION_CHANGE_THEME) })
+            tags = { @Tag(FBEventAction.ACTION_CHANGE_THEME) })
     public void changeTheme(Object o) {
         Drawable bgThumb = ContextCompat.getDrawable(getContext(), R.drawable.bg_fb_seekbar_thumb);
         Drawable bgMiddle = ContextCompat.getDrawable(getContext(), R.drawable.bg_middle);
@@ -275,26 +276,26 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
 
         if (FBState.isDark) {
             DrawableCompat.setTint(bgMiddle, ContextCompat.getColor(getContext(),
-                R.color.white));
+                    R.color.white));
             DrawableCompat.setTint(bgProgress, ContextCompat.getColor(getContext(),
-                R.color.theme_color));
+                    R.color.theme_color));
             DrawableCompat.setTint(bgThumb, ContextCompat.getColor(getContext(),
-                R.color.theme_color));
+                    R.color.theme_color));
 
             fbBubbleTV.setTextColor(ContextCompat.getColor(getContext(),
-                R.color.seekbar_background));
+                    R.color.seekbar_background));
 
             fbRenderEnableIV.setImageDrawable(ContextCompat.getDrawable(getContext(), R.mipmap.ic_render_white_enable));
         } else {
 
             DrawableCompat.setTint(bgMiddle, ContextCompat.getColor(getContext(),
-                R.color.dark_black));
+                    R.color.dark_black));
             DrawableCompat.setTint(bgProgress, ContextCompat.getColor(getContext(),
-                R.color.theme_color));
+                    R.color.theme_color));
             DrawableCompat.setTint(bgThumb, ContextCompat.getColor(getContext(),
-                R.color.theme_color));
+                    R.color.theme_color));
             fbBubbleTV.setTextColor(ContextCompat.getColor(getContext(),
-                R.color.seekbar_background));
+                    R.color.seekbar_background));
 
             fbRenderEnableIV.setImageDrawable(ContextCompat.getDrawable(getContext(), R.mipmap.ic_render_black_enable));
         }
@@ -313,7 +314,7 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
 
         //美颜——美肤——美肤
         if (FBState.currentViewState == FBViewState.BEAUTY
-            && FBState.currentSecondViewState == FBViewState.BEAUTY_SKIN) {
+                && FBState.currentSecondViewState == FBViewState.BEAUTY_SKIN) {
 
             //滑动条变化时，将重置按钮设为可选
             if (!FBUICacheUtils.beautySkinResetEnable()) {
@@ -384,7 +385,7 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
 
         //美颜——美肤——美型
         if (FBState.currentViewState == FBViewState.BEAUTY
-            && FBState.currentSecondViewState == FBViewState.BEAUTY_FACE_TRIM) {
+                && FBState.currentSecondViewState == FBViewState.BEAUTY_FACE_TRIM) {
 
             //滑动条变化时，将重置按钮设为可选
             if (!FBUICacheUtils.beautyFaceTrimResetEnable()) {
@@ -495,23 +496,23 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
 
 
         //美颜——滤镜
-        if (FBState.currentViewState == FBViewState.FILTER) {
-
-            styleNormal(progress);
-            Log.e("滤镜" + FBState.currentStyleFilter.getName(), progress + "%");
-            FBUICacheUtils.setBeautyFilterValue(FBState.currentStyleFilter.getName(), progress);
-
-            FBEffect.shareInstance().setFilter(FBFilterEnum.FBFilterBeauty.getValue(), FBState.currentStyleFilter.getName(), progress);
-            return;
-        }
+//        if (FBState.currentViewState == FBViewState.FILTER) {
+//
+//            styleNormal(progress);
+//            Log.e("滤镜" + FBState.currentStyleFilter.getName(), progress + "%");
+//            FBUICacheUtils.setBeautyFilterValue(FBState.currentStyleFilter.getName(), progress);
+//
+//            FBEffect.shareInstance().setFilter(FBFilterEnum.FBFilterBeauty.getValue(), FBState.currentStyleFilter.getName(), progress);
+//            return;
+//        }
 
         if (FBState.currentViewState == FBViewState.BEAUTY) {
 
             styleNormal(progress);
             Log.e("滤镜" + FBState.currentStyleFilter.getName(), progress + "%");
-            FBUICacheUtils.setBeautyFilterValue(FBState.currentStyleFilter.getName(), progress);
 
-            FBEffect.shareInstance().setFilter(FBFilterEnum.FBFilterBeauty.getValue(), FBState.currentStyleFilter.getName(), progress);
+            FBEffect.shareInstance().setFilter(FBFilterEnum.FBFilterBeauty.getValue(), FBUICacheUtils.getBeautyFilterName(), progress);
+            FBUICacheUtils.setBeautyFilterValue(FBUICacheUtils.getBeautyFilterName(), progress);
             return;
         }
 
@@ -615,7 +616,3 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
     }
 
 }
-
-
-
-

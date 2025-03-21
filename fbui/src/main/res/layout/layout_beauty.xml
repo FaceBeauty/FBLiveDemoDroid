@@ -1,88 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:gravity="center">
-
-    <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/shutter_iv"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:src="@drawable/icon_shutter_light"
-                android:visibility="gone"/>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layout"
+    android:clickable="true"
+    android:focusable="true">
 
     <LinearLayout
         android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/top_indicator_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:clickable="true"
         android:orientation="vertical">
 
-        <View
-            android:id="@+id/line"
-            android:layout_width="match_parent"
-            android:layout_height="0px"
-            android:alpha="0.3" />
-
-        <RelativeLayout
-            android:id="@+id/rl_bottom"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="15dp"
-            android:paddingBottom="0dp">
+            android:id="@+id/container_all"
+            android:orientation="vertical"
+            android:visibility="gone">
 
-            <com.nimo.fb_effect.view.FBBarView
-                android:id="@+id/fb_bar"
+            <RelativeLayout
+                android:id="@+id/rl_bottom"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/return_iv"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="0dp" />
-
-            <!--<androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/shutter_iv"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_centerHorizontal="true"
-                android:src="@drawable/icon_shutter_light"
-                android:visibility="gone" />-->
-
-        </RelativeLayout>
-
-        <com.shizhefei.view.viewpager.SViewPager
-            android:id="@+id/fb_pager"
-            android:layout_width="match_parent"
-            android:layout_height="110dp" />
-
-        <RelativeLayout
-            android:id="@+id/layout_indicator"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_gravity="bottom">
-
-            <com.shizhefei.view.indicator.ScrollIndicatorView
-                android:id="@+id/top_indicator_view"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:gravity="center"
-                android:paddingHorizontal="15dp" />
-
-            <Button
-                android:id="@+id/alternate_indicator_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentLeft="true"
-                android:background="@android:color/transparent"
-                android:gravity="center"
+                android:layout_height="wrap_content"
                 android:paddingHorizontal="15dp"
-                android:visibility="gone" />
+                android:paddingBottom="0dp">
 
-        </RelativeLayout>
+                <com.nimo.fb_effect.view.FBBarView
+                    android:id="@+id/fb_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
 
+            </RelativeLayout>
+
+            <com.shizhefei.view.viewpager.SViewPager
+                android:id="@+id/fb_pager"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"/>
+
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+
+    <com.shizhefei.view.indicator.ScrollIndicatorView
+        android:id="@+id/top_indicator_view"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:paddingHorizontal="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

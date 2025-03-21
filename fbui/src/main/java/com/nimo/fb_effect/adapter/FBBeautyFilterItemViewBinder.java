@@ -2,7 +2,7 @@ package com.nimo.fb_effect.adapter;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
-import androidx.annotation.NonNull;;
+import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
@@ -32,7 +32,7 @@ import me.drakeet.multitype.ItemViewBinder;
  * 滤镜Item的适配器
  */
 public class FBBeautyFilterItemViewBinder extends ItemViewBinder<FBBeautyFilterConfig.FBBeautyFilter,
-    FBBeautyFilterItemViewBinder.ViewHolder> {
+        FBBeautyFilterItemViewBinder.ViewHolder> {
 
   @NonNull @Override protected FBBeautyFilterItemViewBinder.ViewHolder onCreateViewHolder(@NonNull LayoutInflater inflater, @NonNull ViewGroup parent) {
     View root = inflater.inflate(R.layout.item_filter, parent, false);
@@ -44,7 +44,7 @@ public class FBBeautyFilterItemViewBinder extends ItemViewBinder<FBBeautyFilterC
 
     //根据缓存中的选中的哪一个判断当前item是否被选中
     holder.itemView.setSelected(getPosition(holder) ==
-        FBUICacheUtils.getBeautyFilterPosition());
+            FBUICacheUtils.getBeautyFilterPosition());
 
     String currentLanguage = Locale.getDefault().getLanguage();
     if("en".equals(currentLanguage)){
@@ -56,7 +56,7 @@ public class FBBeautyFilterItemViewBinder extends ItemViewBinder<FBBeautyFilterC
     holder.name.setBackgroundColor(Color.TRANSPARENT);
 
     holder.name.setTextColor(FBState.isDark ? Color.WHITE : ContextCompat
-        .getColor(holder.itemView.getContext(),R.color.dark_black));
+            .getColor(holder.itemView.getContext(),R.color.dark_black));
 
     // holder.thumbIV.setClipToOutline(true);
     // GradientDrawable drawable = new GradientDrawable();
@@ -66,45 +66,39 @@ public class FBBeautyFilterItemViewBinder extends ItemViewBinder<FBBeautyFilterC
     String resName = "ic_filter_" + item.getName();
     Log.d("resName", "styleName: " + resName);
     int resID = holder.itemView.getResources().getIdentifier(resName, "drawable",
-        holder.itemView.getContext().getPackageName());
+            holder.itemView.getContext().getPackageName());
     Log.d("resName", "resId: " + resID);
     Glide.with(holder.itemView.getContext())
-        .load(resID)
-        // .placeholder(R.drawable.icon_placeholder)
-        .into(holder.thumbIV);
+            .load(resID)
+            // .placeholder(R.drawable.icon_placeholder)
+            .into(holder.thumbIV);
 
     holder.maker.setVisibility(
-        holder.itemView.isSelected() ? View.VISIBLE : View.GONE
+            holder.itemView.isSelected() ? View.VISIBLE : View.GONE
     );
 
     holder.itemView.setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View view) {
 
-        if(true){
-          if (holder.itemView.isSelected()) {
-            return;
-          }
+//          if (holder.itemView.isSelected()) {
+//            return;
+//          }
+
+        //应用效果
+        FBEffect.shareInstance().setFilter(FBFilterEnum.FBFilterBeauty.getValue(), item.getName(),FBUICacheUtils.getBeautyFilterValue(item.getName()));
+
+        FBState.currentStyleFilter = item;
+
+        holder.itemView.setSelected(true);
+        getAdapter().notifyItemChanged(FBUICacheUtils.getBeautyFilterPosition());
+        FBUICacheUtils.setBeautyFilterPosition(getPosition(holder));
+        FBUICacheUtils.setBeautyFilterName(item.getName());
+        getAdapter().notifyItemChanged(FBUICacheUtils.getBeautyFilterPosition());
 
 
-          //应用效果
+        RxBus.get().post(FBEventAction.ACTION_SYNC_PROGRESS, "");
+        RxBus.get().post(FBEventAction.ACTION_SHOW_FILTER, "");
 
-
-          FBEffect.shareInstance().setFilter(FBFilterEnum.FBFilterBeauty.getValue(), item.getName());
-
-          FBState.currentStyleFilter = item;
-
-          holder.itemView.setSelected(true);
-          getAdapter().notifyItemChanged(FBUICacheUtils.getBeautyFilterPosition());
-          FBUICacheUtils.setBeautyFilterPosition(getPosition(holder));
-          FBUICacheUtils.setBeautyFilterName(item.getName());
-          getAdapter().notifyItemChanged(FBUICacheUtils.getBeautyFilterPosition());
-
-
-          RxBus.get().post(FBEventAction.ACTION_SYNC_PROGRESS, "");
-          RxBus.get().post(FBEventAction.ACTION_SHOW_FILTER, "");
-        }else{
-          RxBus.get().post(FBEventAction.ACTION_MAKEUP_STYLE_SELECTED, "");
-        }
 
       }
     });

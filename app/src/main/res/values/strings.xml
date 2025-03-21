@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FBEffectDemo</string>
+    <string name="app_name">FaceBeautyDemo</string>
     <string name="select_image">选择图片</string>
     <string name="render">渲染</string>
 </resources>

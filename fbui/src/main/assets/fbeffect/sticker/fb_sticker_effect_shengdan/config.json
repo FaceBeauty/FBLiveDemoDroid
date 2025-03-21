@@ -1,0 +1,60 @@
+{
+  "HTSMGroupList": [
+    {
+      "dirName": "p_maozi",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 0.40,
+      "yOffset": -1.01,
+      "widthOffset": 2.24,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 880,
+      "imageHeight": 702,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_huxu",
+      "type": 3,
+      "trackPart": 9,
+      "xOffset": 0,
+      "yOffset": 0.49,
+      "widthOffset": 1.22,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 701,
+      "imageHeight": 846,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_dong",
+      "type": 3,
+      "trackPart": 6,
+      "xOffset": 0.05,
+      "yOffset": -0.22,
+      "widthOffset": 1,
+      "heightOffset": 0,
+      "imageNumber": 25,
+      "scene": 0,
+      "imageWidth": 300,
+      "imageHeight": 200,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_yanjing",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": -0.01,
+      "yOffset": 0.1,
+      "widthOffset": 0.43,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 180,
+      "imageHeight": 104,
+      "triggerType": 0
+    }
+  ]
+}

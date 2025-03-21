@@ -1,0 +1,41 @@
+{
+    "fb_mask": [
+
+        {
+            "name": "",
+            "category": "default",
+            "icon": "icon_cancel.png",
+            "download": 2
+        },
+        {
+            "name": "fb_mask_purple",
+            "category": "default",
+            "icon": "fb_mask_purple_icon.png",
+            "download": 2
+        },
+        {
+            "name": "fb_mask_blue",
+            "category": "default",
+            "icon": "fb_mask_blue_icon.png",
+            "download": 2
+        },
+        {
+            "name": "fb_mask_green",
+            "category": "default",
+            "icon": "fb_mask_green_icon.png",
+            "download": 2
+        },
+        {
+            "name": "fb_mask_tiger_huang",
+            "category": "default",
+            "icon": "fb_mask_tiger_huang_icon.png",
+            "download": 2
+        },
+        {
+            "name": "fb_mask_tiger_bai",
+            "category": "default",
+            "icon": "fb_mask_tiger_bai_icon.png",
+            "download": 2
+        }
+    ]
+}

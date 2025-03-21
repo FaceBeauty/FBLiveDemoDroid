@@ -4,7 +4,7 @@
         <!-- 圆形背景 -->
         <shape android:shape="oval">
             <!-- 设置边框颜色和宽度 -->
-            <stroke android:width="2dp" android:color="@color/ht_selected" />
+            <stroke android:width="2dp" android:color="@color/fb_selected" />
             <!-- 设置背景颜色 -->
             <solid android:color="@android:color/transparent" />
         </shape>

@@ -1,0 +1,46 @@
+{
+    "fb_sticker": [
+        {
+            "name": "",
+            "category": "default",
+            "icon": "icon_cancel.png",
+            "download": 2
+        },
+        {
+            "name": "fb_sticker_effect_lu",
+            "category": "default",
+            "icon": "fb_sticker_effect_lu_icon.png",
+            "download": 2
+        },
+        {
+            "name": "fb_sticker_effect_mao",
+            "category": "default",
+            "icon": "fb_sticker_effect_mao_icon.png",
+            "download": 2
+        },
+        {
+            "name": "fb_sticker_effect_shengdan",
+            "category": "default",
+            "icon": "fb_sticker_effect_shendan_icon.png",
+            "download": 2
+        },
+        {
+            "name": "fb_sticker_effect_xinchun",
+            "category": "default",
+            "icon": "fb_sticker_effect_xinchun_icon.png",
+            "download": 2
+        },
+        {
+            "name": "fb_sticker_effect_tuzi",
+            "category": "default",
+            "icon": "fb_sticker_effect_tuzi_icon.png",
+            "download": 2
+        },
+        {
+            "name": "fb_sticker_effect_xiaozhu",
+            "category": "default",
+            "icon": "fb_sticker_effect_xiaozhu_icon.png",
+            "download": 2
+        }
+    ]
+}

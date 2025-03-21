@@ -47,7 +47,7 @@
                 android:layout_width="4dp"
                 android:layout_height="4dp"
                 android:visibility="invisible"
-                android:backgroundTint="@color/ht_selected"
+                android:backgroundTint="@color/fb_selected"
                 android:background="@drawable/bg_circle_round"
                 android:layout_marginTop="6dp" />
 

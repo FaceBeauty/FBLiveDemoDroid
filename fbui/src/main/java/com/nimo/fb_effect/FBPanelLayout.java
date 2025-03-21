@@ -514,7 +514,7 @@ public class FBPanelLayout extends ConstraintLayout
       case BEAUTY:
         ivFbTrigger.setVisibility(View.GONE);
         ivFbRestore.setVisibility(View.GONE);
-        shutterIv.setVisibility(View.VISIBLE);
+        shutterIv.setVisibility(View.GONE);
         btnShutter.setVisibility(View.GONE);
         stickerView.setVisibility(VISIBLE);
         switchModePanel(new FBBeautyFragment(),"beauty");

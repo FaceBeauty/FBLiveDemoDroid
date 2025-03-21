@@ -28,7 +28,7 @@ public class FBUICacheUtils {
         }
 
         //设置滤镜
-        FBEffect.shareInstance().setFilter(FBFilterEnum.FBFilterBeauty.getValue(), getBeautyFilterName());
+        FBEffect.shareInstance().setFilter(FBFilterEnum.FBFilterBeauty.getValue(), getBeautyFilterName(),getBeautyFilterValue(getBeautyFilterName()));
 
         //美肤系
         FBEffect.shareInstance().setBeauty(FBBeautyParam.FBBeautyClearSmoothing, beautySkinValue(FBBeautyKey.blurriness));
@@ -67,14 +67,14 @@ public class FBUICacheUtils {
     //---------美肤选中了哪个-------------------
     public static int beautySkinPosition() {
         return SharedPreferencesUtil
-            .get(FBUICacheKey.BEAUTY_SKIN_SELECT_POSITION.name(),
-                FBUICacheKey.BEAUTY_SKIN_SELECT_POSITION.getDefaultInt());
+                .get(FBUICacheKey.BEAUTY_SKIN_SELECT_POSITION.name(),
+                        FBUICacheKey.BEAUTY_SKIN_SELECT_POSITION.getDefaultInt());
     }
 
     public static void beautySkinPosition(int position) {
         Log.e("beautySkinPosition", position + "");
         SharedPreferencesUtil.put(FBUICacheKey.BEAUTY_SKIN_SELECT_POSITION.name(),
-            position);
+                position);
     }
 
     //-------------------------------------------------
@@ -82,13 +82,13 @@ public class FBUICacheUtils {
     //---------------美型----------------------------------
     public static int beautyFaceTrimPosition() {
         return SharedPreferencesUtil
-            .get(FBUICacheKey.BEAUTY_FACE_TRIM_SELECT_POSITION.name(),
-                FBUICacheKey.BEAUTY_FACE_TRIM_SELECT_POSITION.getDefaultInt());
+                .get(FBUICacheKey.BEAUTY_FACE_TRIM_SELECT_POSITION.name(),
+                        FBUICacheKey.BEAUTY_FACE_TRIM_SELECT_POSITION.getDefaultInt());
     }
 
     public static void beautyFaceTrimPosition(int position) {
         SharedPreferencesUtil.put(FBUICacheKey.BEAUTY_FACE_TRIM_SELECT_POSITION.name(),
-            position);
+                position);
     }
 
     //-------------------------------------------------
@@ -104,7 +104,7 @@ public class FBUICacheUtils {
     public static int getBeautyFilterPosition() {
 
         return SharedPreferencesUtil.get(FBUICacheKey.FILTER_SELECT_POSITION.name(),
-            FBUICacheKey.FILTER_SELECT_POSITION.getDefaultInt());
+                FBUICacheKey.FILTER_SELECT_POSITION.getDefaultInt());
     }
 
     public static void setBeautyFilterPosition(int position) {
@@ -118,7 +118,7 @@ public class FBUICacheUtils {
     public static String getBeautyFilterName() {
 
         return SharedPreferencesUtil.get(FBUICacheKey.FILTER_SELECT_NAME.name(),
-            FBUICacheKey.FILTER_SELECT_NAME.getDefaultStr());
+                FBUICacheKey.FILTER_SELECT_NAME.getDefaultStr());
     }
 
     public static void setBeautyFilterName(String name) {
@@ -126,7 +126,7 @@ public class FBUICacheUtils {
     }
 
     public static int getBeautyFilterValue(String filterName) {
-        return SharedPreferencesUtil.get("filter_" + filterName, 100);
+        return SharedPreferencesUtil.get("filter_" + filterName, 40);
     }
 
     public static void setBeautyFilterValue(String filterName, int value) {
@@ -140,7 +140,7 @@ public class FBUICacheUtils {
     public static int previewInitialWidth() {
 
         return SharedPreferencesUtil.get("previewInitialWidth",
-            0);
+                0);
     }
 
     public static void previewInitialWidth(int width) {
@@ -150,7 +150,7 @@ public class FBUICacheUtils {
     public static int previewInitialHeight() {
 
         return SharedPreferencesUtil.get("previewInitialHeight",
-            0);
+                0);
     }
 
     public static void previewInitialHeight(int height) {
@@ -169,10 +169,10 @@ public class FBUICacheUtils {
 
         switch (key) {
             case whiteness:
-                defaultValue = 70;
+                defaultValue = 40;
                 break;
             case blurriness:
-                defaultValue = 80;
+                defaultValue = 60;
                 break;
             case rosiness:
                 defaultValue = 10;
@@ -184,20 +184,24 @@ public class FBUICacheUtils {
                 defaultValue = 55;
                 break;
             case undereye_circles:
+                defaultValue = 10;
+                break;
             case nasolabial:
+                defaultValue = 10;
+                break;
             case NONE:
                 break;
         }
 
         return SharedPreferencesUtil.get("beauty_skin_" + key.name(),
-            defaultValue);
+                defaultValue);
 
     }
 
     public static void beautySkinValue(FBBeautyKey key, int progress) {
         SharedPreferencesUtil
-            .put("beauty_skin_" + key.name(),
-                progress);
+                .put("beauty_skin_" + key.name(),
+                        progress);
     }
     //-------------------------------------------------
 
@@ -208,31 +212,38 @@ public class FBUICacheUtils {
 
         switch (key) {
             case EYE_ENLARGING:
-                defaultValue = 60;
+                defaultValue = 40;
                 break;
             case EYE_CORNER_ENLARGING:
                 break;
             case CHEEK_THINNING:
-                defaultValue = 30;
+                defaultValue = 10;
                 break;
             case NOSE_APEX_LESSENING:
+                break;
             case NOSE_ROOT_ENLARGING:
+                break;
             case MOUTH_SMILING:
+                defaultValue = 30;
+                break;
             case FACE_LESSENING:
                 break;
             case TEMPLE_ENLARGING:
                 defaultValue = 50;
                 break;
             case CHEEK_BONE_THINNING:
+                break;
             case CHEEK_NARROWING:
+                break;
             case JAW_BONE_THINNING:
-
+                defaultValue = 10;
+                break;
             case CHEEK_SHORTENING:
                 break;
             case EYE_ROUNDING:
                 break;
             case CHEEK_V_SHAPING:
-                defaultValue = 50;
+                defaultValue = 40;
                 break;
             case CHIN_TRIMMING:
                 defaultValue = 50;
@@ -253,7 +264,7 @@ public class FBUICacheUtils {
                 defaultValue = 50;
                 break;
             case NOSE_THINNING:
-                defaultValue = 40;
+                defaultValue = 50;
                 break;
             case MOUTH_TRIMMING:
                 defaultValue = 50;
@@ -266,14 +277,14 @@ public class FBUICacheUtils {
         }
 
         return SharedPreferencesUtil.get("beauty_face_trim_" + key.name(),
-            defaultValue);
+                defaultValue);
 
     }
 
     public static void beautyFaceTrimValue(FBFaceTrim key, int progress) {
         SharedPreferencesUtil
-            .put("beauty_face_trim_" + key.name(),
-                progress);
+                .put("beauty_face_trim_" + key.name(),
+                        progress);
     }
 
 

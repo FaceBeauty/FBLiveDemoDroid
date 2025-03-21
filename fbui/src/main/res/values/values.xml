@@ -8,7 +8,8 @@
 <!--    <color name="theme_color">#FFAAF200</color>-->
 <!--    <color name="ht_selected">#FFAAF200</color>-->
     <color name="theme_color">#38A8FF</color>
-    <color name="ht_selected">#38A8FF</color>
+    <color name="fb_selected">#38A8FF</color>
+    <color name="fb_unselected">#FFFFFF</color>
     <color name="ht_selected_filter">#FFFFFF</color>
     <color name="dark_background">#B3000000</color>
     <color name="seekbar_background">#80EEEEEE</color>
