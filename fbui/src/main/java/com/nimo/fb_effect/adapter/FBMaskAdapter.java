@@ -1,7 +1,7 @@
 package com.nimo.fb_effect.adapter;
 
 import android.os.Handler;
-import androidx.annotation.NonNull;;
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,11 +9,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.hwangjr.rxbus.RxBus;
 import com.liulishuo.okdownload.DownloadTask;
 import com.liulishuo.okdownload.core.cause.EndCause;
 import com.liulishuo.okdownload.core.dispatcher.DownloadDispatcher;
 import com.liulishuo.okdownload.core.listener.DownloadListener2;
 import com.nimo.fb_effect.R;
+import com.nimo.fb_effect.model.FBEventAction;
 import com.nimo.fb_effect.model.FBMaskResEnum;
 import com.nimo.fb_effect.model.FBDownloadState;
 import com.nimo.fb_effect.model.FBMaskConfig;
@@ -219,6 +221,7 @@ public class FBMaskAdapter extends RecyclerView.Adapter<FBStickerViewHolder> {
                         FBSelectedPosition.POSITION_MASK = selectedPosition;
                         notifyItemChanged(selectedPosition);
                         notifyItemChanged(lastPosition);
+                        RxBus.get().post(FBEventAction.ACTION_RENDER_PICTURE, "");
                     }
 
 

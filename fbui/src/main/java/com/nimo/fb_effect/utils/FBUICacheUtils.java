@@ -35,9 +35,14 @@ public class FBUICacheUtils {
         FBEffect.shareInstance().setBeauty(FBBeautyParam.FBBeautySkinRosiness, beautySkinValue(FBBeautyKey.rosiness));
         FBEffect.shareInstance().setBeauty(FBBeautyParam.FBBeautySkinWhitening, beautySkinValue(FBBeautyKey.whiteness));
         FBEffect.shareInstance().setBeauty(FBBeautyParam.FBBeautyImageBrightness, beautySkinValue(FBBeautyKey.brightness) - 50);
-        FBEffect.shareInstance().setBeauty(FBBeautyParam.FBBeautyImageSharpness, beautySkinValue(FBBeautyKey.clearness));
+        FBEffect.shareInstance().setBeauty(FBBeautyParam.FBBeautyImageSharpness, beautySkinValue(FBBeautyKey.sharpening));
+        FBEffect.shareInstance().setBeauty(FBBeautyParam.FBBeautyImageClarity, beautySkinValue(FBBeautyKey.clearness));
+        FBEffect.shareInstance().setBeauty(FBBeautyParam.FBBeautyEyeBrightening, beautySkinValue(FBBeautyKey.eyeslight));
+        FBEffect.shareInstance().setBeauty(FBBeautyParam.FBBeautyToothWhitening, beautySkinValue(FBBeautyKey.teethwhite));
+        FBEffect.shareInstance().setBeauty(FBBeautyParam.FBBeautyFaceContouring, beautySkinValue(FBBeautyKey.sharpfeatured));
         FBEffect.shareInstance().setBeauty(FBBeautyParam.FBBeautyDarkCircleLessening, beautySkinValue(FBBeautyKey.undereye_circles));
         FBEffect.shareInstance().setBeauty(FBBeautyParam.FBBeautyNasolabialLessening, beautySkinValue(FBBeautyKey.nasolabial));
+        FBEffect.shareInstance().setBeauty(FBBeautyParam.FBBeautyWhiteBalance, beautySkinValue(FBBeautyKey.whitebalance) - 50);
         //美型系
         FBEffect.shareInstance().setReshape(FBBeautyParam.FBReshapeEyeEnlarging, beautyFaceTrimValue(FBFaceTrim.EYE_ENLARGING));
         FBEffect.shareInstance().setReshape(FBBeautyParam.FBReshapeEyeRounding, beautyFaceTrimValue(FBFaceTrim.EYE_ROUNDING));
@@ -67,14 +72,14 @@ public class FBUICacheUtils {
     //---------美肤选中了哪个-------------------
     public static int beautySkinPosition() {
         return SharedPreferencesUtil
-                .get(FBUICacheKey.BEAUTY_SKIN_SELECT_POSITION.name(),
-                        FBUICacheKey.BEAUTY_SKIN_SELECT_POSITION.getDefaultInt());
+            .get(FBUICacheKey.BEAUTY_SKIN_SELECT_POSITION.name(),
+                FBUICacheKey.BEAUTY_SKIN_SELECT_POSITION.getDefaultInt());
     }
 
     public static void beautySkinPosition(int position) {
         Log.e("beautySkinPosition", position + "");
         SharedPreferencesUtil.put(FBUICacheKey.BEAUTY_SKIN_SELECT_POSITION.name(),
-                position);
+            position);
     }
 
     //-------------------------------------------------
@@ -82,13 +87,13 @@ public class FBUICacheUtils {
     //---------------美型----------------------------------
     public static int beautyFaceTrimPosition() {
         return SharedPreferencesUtil
-                .get(FBUICacheKey.BEAUTY_FACE_TRIM_SELECT_POSITION.name(),
-                        FBUICacheKey.BEAUTY_FACE_TRIM_SELECT_POSITION.getDefaultInt());
+            .get(FBUICacheKey.BEAUTY_FACE_TRIM_SELECT_POSITION.name(),
+                FBUICacheKey.BEAUTY_FACE_TRIM_SELECT_POSITION.getDefaultInt());
     }
 
     public static void beautyFaceTrimPosition(int position) {
         SharedPreferencesUtil.put(FBUICacheKey.BEAUTY_FACE_TRIM_SELECT_POSITION.name(),
-                position);
+            position);
     }
 
     //-------------------------------------------------
@@ -104,7 +109,7 @@ public class FBUICacheUtils {
     public static int getBeautyFilterPosition() {
 
         return SharedPreferencesUtil.get(FBUICacheKey.FILTER_SELECT_POSITION.name(),
-                FBUICacheKey.FILTER_SELECT_POSITION.getDefaultInt());
+            FBUICacheKey.FILTER_SELECT_POSITION.getDefaultInt());
     }
 
     public static void setBeautyFilterPosition(int position) {
@@ -118,7 +123,7 @@ public class FBUICacheUtils {
     public static String getBeautyFilterName() {
 
         return SharedPreferencesUtil.get(FBUICacheKey.FILTER_SELECT_NAME.name(),
-                FBUICacheKey.FILTER_SELECT_NAME.getDefaultStr());
+            FBUICacheKey.FILTER_SELECT_NAME.getDefaultStr());
     }
 
     public static void setBeautyFilterName(String name) {
@@ -140,7 +145,7 @@ public class FBUICacheUtils {
     public static int previewInitialWidth() {
 
         return SharedPreferencesUtil.get("previewInitialWidth",
-                0);
+            0);
     }
 
     public static void previewInitialWidth(int width) {
@@ -150,7 +155,7 @@ public class FBUICacheUtils {
     public static int previewInitialHeight() {
 
         return SharedPreferencesUtil.get("previewInitialHeight",
-                0);
+            0);
     }
 
     public static void previewInitialHeight(int height) {
@@ -172,36 +177,49 @@ public class FBUICacheUtils {
                 defaultValue = 40;
                 break;
             case blurriness:
-                defaultValue = 60;
-                break;
-            case rosiness:
-                defaultValue = 10;
-                break;
-            case clearness:
-                defaultValue = 5;
-                break;
-            case brightness:
                 defaultValue = 55;
                 break;
+            case rosiness:
+                defaultValue = 30;
+                break;
+            case sharpening:
+                defaultValue = 60;
+                break;
+            case clearness:
+                break;
+            case sharpfeatured:
+                defaultValue = 40;
+                break;
+            case eyeslight:
+                defaultValue = 30;
+                break;
+            case teethwhite:
+                break;
+            case brightness:
+                defaultValue = 50;
+                break;
             case undereye_circles:
-                defaultValue = 10;
+                defaultValue = 80;
                 break;
             case nasolabial:
-                defaultValue = 10;
+                defaultValue = 80;
+                break;
+            case whitebalance:
+                defaultValue = 50;
                 break;
             case NONE:
                 break;
         }
 
         return SharedPreferencesUtil.get("beauty_skin_" + key.name(),
-                defaultValue);
+            defaultValue);
 
     }
 
     public static void beautySkinValue(FBBeautyKey key, int progress) {
         SharedPreferencesUtil
-                .put("beauty_skin_" + key.name(),
-                        progress);
+            .put("beauty_skin_" + key.name(),
+                progress);
     }
     //-------------------------------------------------
 
@@ -217,19 +235,17 @@ public class FBUICacheUtils {
             case EYE_CORNER_ENLARGING:
                 break;
             case CHEEK_THINNING:
-                defaultValue = 10;
                 break;
             case NOSE_APEX_LESSENING:
                 break;
             case NOSE_ROOT_ENLARGING:
                 break;
             case MOUTH_SMILING:
-                defaultValue = 30;
+                defaultValue = 35;
                 break;
             case FACE_LESSENING:
                 break;
             case TEMPLE_ENLARGING:
-                defaultValue = 50;
                 break;
             case CHEEK_BONE_THINNING:
                 break;
@@ -243,7 +259,7 @@ public class FBUICacheUtils {
             case EYE_ROUNDING:
                 break;
             case CHEEK_V_SHAPING:
-                defaultValue = 40;
+                defaultValue = 50;
                 break;
             case CHIN_TRIMMING:
                 defaultValue = 50;
@@ -277,14 +293,14 @@ public class FBUICacheUtils {
         }
 
         return SharedPreferencesUtil.get("beauty_face_trim_" + key.name(),
-                defaultValue);
+            defaultValue);
 
     }
 
     public static void beautyFaceTrimValue(FBFaceTrim key, int progress) {
         SharedPreferencesUtil
-                .put("beauty_face_trim_" + key.name(),
-                        progress);
+            .put("beauty_face_trim_" + key.name(),
+                progress);
     }
 
 

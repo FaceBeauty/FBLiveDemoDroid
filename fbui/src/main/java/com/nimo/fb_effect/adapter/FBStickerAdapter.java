@@ -1,19 +1,25 @@
 package com.nimo.fb_effect.adapter;
 
+import android.content.res.Resources;
 import android.os.Handler;
-import androidx.annotation.NonNull;;
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.hwangjr.rxbus.RxBus;
 import com.liulishuo.okdownload.DownloadTask;
 import com.liulishuo.okdownload.core.cause.EndCause;
 import com.liulishuo.okdownload.core.dispatcher.DownloadDispatcher;
 import com.liulishuo.okdownload.core.listener.DownloadListener2;
 import com.nimo.fb_effect.R;
+import com.nimo.fb_effect.model.FBEventAction;
 import com.nimo.fb_effect.model.FBStickerResEnum;
 import com.nimo.fb_effect.model.FBDownloadState;
 import com.nimo.fb_effect.model.FBStickerConfig;
@@ -81,11 +87,21 @@ public class FBStickerAdapter extends RecyclerView.Adapter<FBStickerViewHolder> 
         if (fbSticker == FBStickerConfig.FBSticker.NO_STICKER) {
             holder.thumbIV.setImageResource(R.mipmap.icon_ht_none_sticker);
         } else {
+            String drawableName = "icon_" + fbSticker.getName();
+            Log.d("drawableName", "onBindViewHolder: "+drawableName);
+            Resources resources = holder.itemView.getContext().getResources();
+            int resID = resources.getIdentifier(drawableName, "drawable", holder.itemView.getContext().getPackageName());
+
+            Glide.with(holder.itemView.getContext())
+                    .load(resID)
+                    // .placeholder(R.drawable.icon_placeholder)
+                    .into(holder.thumbIV);
+
 //            Glide.with(holder.itemView.getContext())
 //                .load(stickerList.get(position).getIcon())
 //                .placeholder(R.drawable.icon_placeholder)
 //                .into(holder.thumbIV);
-            holder.thumbIV.setImageDrawable(FBStickerResEnum.values()[holder.getAdapterPosition()].getIcon(holder.itemView.getContext()));
+//            holder.thumbIV.setImageDrawable(FBStickerResEnum.values()[holder.getAdapterPosition()].getIcon(holder.itemView.getContext()));
         }
 
         //判断是否已经下载
@@ -213,13 +229,13 @@ public class FBStickerAdapter extends RecyclerView.Adapter<FBStickerViewHolder> 
                     }else{
                         //如果已经下载了，则让贴纸生效
                         FBEffect.shareInstance().setARItem(FBItemEnum.FBItemSticker.getValue(), fbSticker.getName());
-
                         //切换选中背景
                         int lastPosition = selectedPosition;
                         selectedPosition = holder.getAdapterPosition();
                         FBSelectedPosition.POSITION_STICKER = selectedPosition;
                         notifyItemChanged(selectedPosition);
                         notifyItemChanged(lastPosition);
+                        RxBus.get().post(FBEventAction.ACTION_RENDER_PICTURE, "");
                     }
 
                 }

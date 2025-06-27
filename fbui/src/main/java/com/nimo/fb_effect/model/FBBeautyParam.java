@@ -9,6 +9,11 @@ public class FBBeautyParam {
     public static final int FBBeautyImageBrightness = 4;
     public static final int FBBeautyDarkCircleLessening = 5;
     public static final int FBBeautyNasolabialLessening = 6;
+    public static final int FBBeautyToothWhitening = 7;
+    public static final int FBBeautyEyeBrightening = 8;
+    public static final int FBBeautyWhiteBalance = 9;
+    public static final int FBBeautyImageClarity = 10;
+    public static final int FBBeautyFaceContouring = 11;
     public static final int FBReshapeEyeEnlarging = 10;
     public static final int FBReshapeEyeRounding = 11;
     public static final int FBReshapeEyeSpaceTrimming = 12;

@@ -28,7 +28,9 @@
     <string name="blurriness">Exfoliating</string>
     <string name="precise_skin">PreciseSkin</string>
     <string name="rosiness">Ruddy</string>
-    <string name="clearness">Distinctive</string>
+    <string name="sharpening">Sharpening</string>
+    <string name="clearness">Clearness</string>
+    <string name="sharpfeatured">Sharp facial contours</string>
     <string name="brightness">Brightness</string>
 
     <string name="face_shape">FaceShape</string>
@@ -55,6 +57,7 @@
     <string name="undereye_circles">Black eye</string>
     <string name="short_face">Short face</string>
     <string name="nasolabial_fold">Wrinkles</string>
+    <string name="withe_balance">Withe Balance</string>
     <string name="eyes_light">Light eye</string>
     <string name="teeth_white">White teeth</string>
     <string name="tracker1">Tracker1</string>

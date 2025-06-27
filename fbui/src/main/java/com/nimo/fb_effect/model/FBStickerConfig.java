@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 import com.nimo.fb_effect.utils.FBConfigTools;
 import com.nimo.facebeauty.FBEffect;
 import com.nimo.facebeauty.model.FBItemEnum;
+
+import java.io.File;
 import java.util.List;
 
 /**
@@ -88,7 +90,8 @@ public class FBStickerConfig {
     public void setCategory(String category) { this.category = category;}
 
     public String getIcon() {
-      return FBEffect.shareInstance().getARItemPathBy(FBItemEnum.FBItemSticker.getValue()) + "/ICON/" + this.icon;
+//      return FBEffect.shareInstance().getARItemPathBy(FBItemEnum.FBItemSticker.getValue()) + "/ICON/" + this.icon;
+      return FBEffect.shareInstance().getARItemPathBy(FBItemEnum.FBItemSticker.getValue()) + File.separator + this.name + ".png";
 
     }
 

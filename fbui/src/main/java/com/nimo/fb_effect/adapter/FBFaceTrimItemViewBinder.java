@@ -1,7 +1,7 @@
 package com.nimo.fb_effect.adapter;
 
 import android.annotation.SuppressLint;
-import androidx.annotation.NonNull;;
+import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;

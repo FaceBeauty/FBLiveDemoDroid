@@ -3,6 +3,8 @@ package com.nimo.fb_effect.fragment;
 import android.os.Bundle;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 import com.hwangjr.rxbus.annotation.Subscribe;
@@ -66,13 +68,31 @@ public class FBStickerFragment extends FBBaseLazyFragment {
     fbStickerRV.setAdapter(stickerkAdapter);
   }
 
-  @Subscribe(thread = EventThread.MAIN_THREAD,
+  /*@Subscribe(thread = EventThread.MAIN_THREAD,
              tags = { @Tag(FBEventAction.ACTION_SYNC_STICKER_ITEM_CHANGED) })
   public void changedPoint(Object o) {
     int lastposition = FBSelectedPosition.POSITION_STICKER;
     FBSelectedPosition.POSITION_STICKER = -1;
     stickerkAdapter.notifyItemChanged(lastposition);
 
+  }*/
+  @Subscribe(thread = EventThread.MAIN_THREAD,
+          tags = { @Tag(FBEventAction.ACTION_SYNC_STICKER_ITEM_CHANGED) })
+  public void changedPoint(Object o) {
+    if (stickerkAdapter == null) {
+      Log.e("FBStickerFragment", "stickerkAdapter is null, cannot notify item changed.");
+      return;
+    }
+
+    int lastPosition = FBSelectedPosition.POSITION_STICKER;
+
+    FBSelectedPosition.POSITION_STICKER = -1;
+
+    if (lastPosition >= 0 && lastPosition < stickerkAdapter.getItemCount()) {
+      stickerkAdapter.notifyItemChanged(lastPosition);
+    } else {
+      Log.w("FBStickerFragment", "Invalid position: " + lastPosition);
+    }
   }
 
 

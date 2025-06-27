@@ -5,6 +5,8 @@ package com.nimo.fb_effect.model;
  */
 public class FBEventAction {
 
+  //图片渲染
+  public static final String ACTION_RENDER_PICTURE = "ACTION_RENDER_PICTURE";
   //切换主题
   public static final String ACTION_CHANGE_THEME = "ACTION_CHANGE_THEME";
 

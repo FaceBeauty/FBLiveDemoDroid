@@ -53,66 +53,93 @@
            android:paddingStart="5dp"
            android:layout_height="wrap_content">
 
-           <com.nimo.fb_effect.view.FBSkinItem
-               android:id="@+id/btn_white"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content" />
-
+           <!-- 磨皮 -->
            <com.nimo.fb_effect.view.FBSkinItem
                android:id="@+id/btn_blur"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content" />
 
+           <!-- 美白 -->
+           <com.nimo.fb_effect.view.FBSkinItem
+               android:id="@+id/btn_white"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+           <!-- 红润 -->
            <com.nimo.fb_effect.view.FBSkinItem
                android:id="@+id/btn_rosiness"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content" />
 
+           <!-- 清晰 -->
            <com.nimo.fb_effect.view.FBSkinItem
                android:id="@+id/btn_clearness"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content" />
 
+           <!-- 锐化 -->
            <com.nimo.fb_effect.view.FBSkinItem
-               android:id="@+id/btn_brightness"
+               android:id="@+id/btn_sharpening"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content" />
 
+           <!-- 五官立体 -->
            <com.nimo.fb_effect.view.FBSkinItem
-               android:id="@+id/btn_undereye_circles"
+               android:id="@+id/btn_sharpfeatured"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content" />
 
-           <com.nimo.fb_effect.view.FBSkinItem
-               android:id="@+id/btn_nasolabial"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content" />
-
-           <com.nimo.fb_effect.view.FBSkinItem
-               android:id="@+id/btn_teethwhite"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content" />
-
+           <!-- 亮眼 -->
            <com.nimo.fb_effect.view.FBSkinItem
                android:id="@+id/btn_eyeslight"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content" />
 
-
+           <!-- 美牙 -->
            <com.nimo.fb_effect.view.FBSkinItem
-               android:id="@+id/btn_tracker1"
+               android:id="@+id/btn_teethwhite"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content" />
 
+           <!-- 去黑眼圈 -->
            <com.nimo.fb_effect.view.FBSkinItem
-               android:id="@+id/btn_tracker2"
+               android:id="@+id/btn_undereye_circles"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content" />
 
+           <!-- 去法令纹 -->
            <com.nimo.fb_effect.view.FBSkinItem
-               android:id="@+id/btn_tracker3"
+               android:id="@+id/btn_nasolabial"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content" />
+
+           <!-- 白平衡 -->
+           <com.nimo.fb_effect.view.FBSkinItem
+               android:id="@+id/btn_whitebalance"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+           <!-- 亮度 -->
+           <com.nimo.fb_effect.view.FBSkinItem
+               android:id="@+id/btn_brightness"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+
+<!--           <com.nimo.fb_effect.view.FBSkinItem-->
+<!--               android:id="@+id/btn_tracker1"-->
+<!--               android:layout_width="wrap_content"-->
+<!--               android:layout_height="wrap_content" />-->
+
+<!--           <com.nimo.fb_effect.view.FBSkinItem-->
+<!--               android:id="@+id/btn_tracker2"-->
+<!--               android:layout_width="wrap_content"-->
+<!--               android:layout_height="wrap_content" />-->
+
+<!--           <com.nimo.fb_effect.view.FBSkinItem-->
+<!--               android:id="@+id/btn_tracker3"-->
+<!--               android:layout_width="wrap_content"-->
+<!--               android:layout_height="wrap_content" />-->
 
        </LinearLayout>
 

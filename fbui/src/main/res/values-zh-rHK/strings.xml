@@ -19,7 +19,9 @@
     <string name="blurriness">磨皮</string>
     <string name="precise_skin">精准美膚</string>
     <string name="rosiness">紅潤</string>
-    <string name="clearness">鮮明</string>
+    <string name="sharpening">銳化</string>
+    <string name="clearness">清晰</string>
+    <string name="sharpfeatured">五官立體</string>
     <string name="brightness">亮度</string>
 
     <string name="face_shape">美型</string>
@@ -45,6 +47,7 @@
     <string name="mouth_smiling">微笑嘴唇</string>
     <string name="undereye_circles">去黑眼圈</string>
     <string name="nasolabial_fold">去法令紋</string>
+    <string name="withe_balance">白平衡</string>
     <string name="eyes_light">亮眼</string>
     <string name="teeth_white">美牙</string>
     <string name="short_face">短臉</string>

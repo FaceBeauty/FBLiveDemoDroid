@@ -27,13 +27,10 @@ import com.nimo.fb_effect.model.FBBeautyKey;
 import com.nimo.fb_effect.model.FBBeautyParam;
 import com.nimo.fb_effect.model.FBState;
 import com.nimo.fb_effect.utils.DpUtils;
-import com.nimo.fb_effect.utils.FBSelectedPosition;
 import com.nimo.fb_effect.utils.FBUICacheUtils;
 import com.nimo.facebeauty.FBEffect;
 import com.nimo.facebeauty.model.FBBeautyEnum;
-import com.nimo.facebeauty.model.FBBodyBeautyEnum;
 import com.nimo.facebeauty.model.FBFilterEnum;
-import com.nimo.facebeauty.model.FBMakeupEnum;
 
 /**
  * 复用的Slider
@@ -94,9 +91,11 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
                 switch (event.getAction()) {
                     case MotionEvent.ACTION_DOWN:
                         FBEffect.shareInstance().setRenderEnable(false);
+                        RxBus.get().post(FBEventAction.ACTION_RENDER_PICTURE, "");
                         return true;
                     case MotionEvent.ACTION_UP:
                         FBEffect.shareInstance().setRenderEnable(true);
+                        RxBus.get().post(FBEventAction.ACTION_RENDER_PICTURE, "");
                         return true;
                 }
                 return false;
@@ -118,13 +117,13 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
      * 同步滑动条参数
      */
     @Subscribe(thread = EventThread.MAIN_THREAD,
-            tags = { @Tag(FBEventAction.ACTION_SYNC_PROGRESS) })
+               tags = { @Tag(FBEventAction.ACTION_SYNC_PROGRESS) })
     public void syncProgress(Object o) {
 
 
         //美颜——美颜
         if (FBState.currentViewState == FBViewState.BEAUTY
-                && FBState.currentSecondViewState == FBViewState.BEAUTY_SKIN) {
+            && FBState.currentSecondViewState == FBViewState.BEAUTY_SKIN) {
 
             //美颜效果未选中，隐藏滑动条
             if (FBState.getCurrentBeautySkin() == FBBeautyKey.NONE) {
@@ -144,7 +143,9 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
                 case blurriness:
                 case whiteness:
                 case rosiness:
+                case sharpening:
                 case clearness:
+                case sharpfeatured:
                 case undereye_circles:
                 case nasolabial:
                 case eyeslight:
@@ -159,6 +160,10 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
                     styleTransform(progress);
                     fbSeekBar.setProgress(progress);
                     break;
+                case whitebalance:
+                    styleTransform(progress);
+                    fbSeekBar.setProgress(progress);
+                    break;
                 case NONE:
                     setVisibility(INVISIBLE);
                     break;
@@ -169,7 +174,7 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
 
         //美颜——美型
         if (FBState.currentViewState == FBViewState.BEAUTY
-                && FBState.currentSecondViewState == FBViewState.BEAUTY_FACE_TRIM) {
+            && FBState.currentSecondViewState == FBViewState.BEAUTY_FACE_TRIM) {
 
             //美型效果未选中，隐藏滑动条
             if (FBUICacheUtils.beautyFaceTrimPosition() == -1) {
@@ -180,7 +185,7 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
             }
 
             int progress = FBUICacheUtils
-                    .beautyFaceTrimValue(FBState.currentFaceTrim);
+                .beautyFaceTrimValue(FBState.currentFaceTrim);
             Log.e("当前模块:", FBState.currentFaceTrim.name());
             Log.e("美型滑动参数同步:", progress + "");
             fbSeekBar.setProgress(progress);
@@ -268,7 +273,7 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
      * @param o
      */
     @Subscribe(thread = EventThread.MAIN_THREAD,
-            tags = { @Tag(FBEventAction.ACTION_CHANGE_THEME) })
+               tags = { @Tag(FBEventAction.ACTION_CHANGE_THEME) })
     public void changeTheme(Object o) {
         Drawable bgThumb = ContextCompat.getDrawable(getContext(), R.drawable.bg_fb_seekbar_thumb);
         Drawable bgMiddle = ContextCompat.getDrawable(getContext(), R.drawable.bg_middle);
@@ -276,26 +281,26 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
 
         if (FBState.isDark) {
             DrawableCompat.setTint(bgMiddle, ContextCompat.getColor(getContext(),
-                    R.color.white));
+                R.color.white));
             DrawableCompat.setTint(bgProgress, ContextCompat.getColor(getContext(),
-                    R.color.theme_color));
+                R.color.theme_color));
             DrawableCompat.setTint(bgThumb, ContextCompat.getColor(getContext(),
-                    R.color.theme_color));
+                R.color.theme_color));
 
             fbBubbleTV.setTextColor(ContextCompat.getColor(getContext(),
-                    R.color.seekbar_background));
+                R.color.seekbar_background));
 
             fbRenderEnableIV.setImageDrawable(ContextCompat.getDrawable(getContext(), R.mipmap.ic_render_white_enable));
         } else {
 
             DrawableCompat.setTint(bgMiddle, ContextCompat.getColor(getContext(),
-                    R.color.dark_black));
+                R.color.dark_black));
             DrawableCompat.setTint(bgProgress, ContextCompat.getColor(getContext(),
-                    R.color.theme_color));
+                R.color.theme_color));
             DrawableCompat.setTint(bgThumb, ContextCompat.getColor(getContext(),
-                    R.color.theme_color));
+                R.color.theme_color));
             fbBubbleTV.setTextColor(ContextCompat.getColor(getContext(),
-                    R.color.seekbar_background));
+                R.color.seekbar_background));
 
             fbRenderEnableIV.setImageDrawable(ContextCompat.getDrawable(getContext(), R.mipmap.ic_render_black_enable));
         }
@@ -314,7 +319,7 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
 
         //美颜——美肤——美肤
         if (FBState.currentViewState == FBViewState.BEAUTY
-                && FBState.currentSecondViewState == FBViewState.BEAUTY_SKIN) {
+            && FBState.currentSecondViewState == FBViewState.BEAUTY_SKIN) {
 
             //滑动条变化时，将重置按钮设为可选
             if (!FBUICacheUtils.beautySkinResetEnable()) {
@@ -336,9 +341,17 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
                     styleNormal(progress);
                     FBEffect.shareInstance().setBeauty(FBBeautyEnum.FBBeautySkinRosiness.getValue(), progress);
                     break;
-                case clearness:
+                case sharpening:
                     styleNormal(progress);
                     FBEffect.shareInstance().setBeauty(FBBeautyEnum.FBBeautyImageSharpness.getValue(), progress);
+                    break;
+                case clearness:
+                    styleNormal(progress);
+                    FBEffect.shareInstance().setBeauty(FBBeautyEnum.FBBeautyImageClarity.getValue(), progress);
+                    break;
+                case sharpfeatured:
+                    styleNormal(progress);
+                    FBEffect.shareInstance().setBeauty(FBBeautyEnum.FBBeautyFaceContouring.getValue(), progress);
                     break;
                 case brightness:
                     styleTransform(progress);
@@ -351,6 +364,10 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
                 case nasolabial:
                     styleNormal(progress);
                     FBEffect.shareInstance().setBeauty(FBBeautyEnum.FBBeautyNasolabialLessening.getValue(), progress);
+                    break;
+                case whitebalance:
+                    styleTransform(progress);
+                    FBEffect.shareInstance().setBeauty(FBBeautyEnum.FBBeautyWhiteBalance.getValue(), progress - 50);
                     break;
                 case teethwhite:
                     styleNormal(progress);
@@ -385,7 +402,7 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
 
         //美颜——美肤——美型
         if (FBState.currentViewState == FBViewState.BEAUTY
-                && FBState.currentSecondViewState == FBViewState.BEAUTY_FACE_TRIM) {
+            && FBState.currentSecondViewState == FBViewState.BEAUTY_FACE_TRIM) {
 
             //滑动条变化时，将重置按钮设为可选
             if (!FBUICacheUtils.beautyFaceTrimResetEnable()) {

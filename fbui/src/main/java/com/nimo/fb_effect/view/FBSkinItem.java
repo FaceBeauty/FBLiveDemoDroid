@@ -3,6 +3,7 @@ package com.nimo.fb_effect.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -40,7 +41,7 @@ public class FBSkinItem extends LinearLayout {
 
   public void init(FBBeauty FBBeauty) {
     this.fbBeauty = FBBeauty;
-    if (FBBeauty == FBBeauty.brightness) {
+    if (FBBeauty == FBBeauty.brightness || FBBeauty == FBBeauty.whitebalance) {
       initialValue = 50;
     }
     updateData();
@@ -98,6 +99,7 @@ public class FBSkinItem extends LinearLayout {
     setSelected(fbBeauty
         .getFBBeautyKey().name()
         .equals(FBState.getCurrentBeautySkin().name()));
+//    Log.d("beautyName", "syncState: "+FBState.getCurrentBeautySkin().name());
   }
 
   /**
