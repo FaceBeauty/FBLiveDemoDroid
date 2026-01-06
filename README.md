@@ -14,5 +14,6 @@
 - 在项目的Application中将 **YOUR_APP_ID** 替换成您的**AppId**
 - 将fbui模块中的**assets**替换为您的**assets**
 - 编译，运行，日志搜索**init-status**可以查看相关日志
+- 全局搜索`todo --faceBeauty--start`可快速查看集成步骤
 
 <br/>
