@@ -29,8 +29,11 @@ public class FBState {
 
   // 当前选中了哪个滤镜
   public static FBBeautyFilter currentStyleFilter = FBBeautyFilter.NO_FILTER;
-
-
+  public static FBEffectFilterConfig.FBEffectFilter currentEffectFilter = FBEffectFilterConfig.FBEffectFilter.NO_FILTER;
+  // 当前选中了哪个美发
+  public static FBHairConfig.FBHair currentHair = FBHairConfig.FBHair.NO_HAIR;
+  public static FBFunnyFilterConfig.FBFunnyFilter currentFunnyFilter = FBFunnyFilterConfig.FBFunnyFilter.NO_FILTER;
+  public static FBViewState currentAR = FBViewState.AR_PROP;
   //释放黑色主题
   public static boolean isDark = true;
 
@@ -52,5 +55,7 @@ public class FBState {
 
     FBUICacheUtils.beautyFaceTrimPosition(-1);
     FBUICacheUtils.beautySkinPosition(-1);
+    //todo
+//    FBUICacheUtils.setBeautyHairPosition(0);
   }
 }

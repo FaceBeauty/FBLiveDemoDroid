@@ -89,6 +89,8 @@
     <string name="face">表情</string>
     <string name="gift">礼物</string>
     <string name="mask">面具</string>
+    <string name="hair">美发</string>
+    <string name="haha">哈哈镜</string>
     <string name="watermark">水印</string>
     <string name="portrait">人像抠图</string>
     <string name="portrait_ai">抠图</string>

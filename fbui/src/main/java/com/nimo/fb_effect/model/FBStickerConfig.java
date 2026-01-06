@@ -17,23 +17,23 @@ public class FBStickerConfig {
   /**
    * stickers
    */
-  private List<FBSticker> fb_sticker;
+  private List<FBSticker> sticker;
 
   @Override public String toString() {
     return "FBStickerConfig{" +
-        "fbStickers=" + fb_sticker.size() +
+        "fbStickers=" + sticker.size() +
         "个}";
   }
 
   public List<FBSticker> getStickers() {
-    return fb_sticker;
+    return sticker;
   }
 
   public FBStickerConfig(List<FBSticker> stickers) {
-    this.fb_sticker = stickers;
+    this.sticker = stickers;
   }
 
-  public void setStickers(List<FBSticker> tiStickers) { this.fb_sticker = tiStickers;}
+  public void setStickers(List<FBSticker> tiStickers) { this.sticker = tiStickers;}
 
   public static class FBSticker {
 

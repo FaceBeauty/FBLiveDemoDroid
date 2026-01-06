@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/container_all"
             android:orientation="vertical"
-            android:visibility="gone">
+            android:visibility="visible">
 
             <RelativeLayout
                 android:id="@+id/rl_bottom"

@@ -9,4 +9,4 @@
     android:orientation="horizontal"
     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
     android:paddingEnd="7dp"
-    android:paddingTop="13dp" />
+    android:paddingTop="13dp"/>

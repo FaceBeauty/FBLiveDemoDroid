@@ -15,23 +15,23 @@ public class FBMaskConfig {
   /**
    * stickers
    */
-  private List<FBMask> fb_mask;
+  private List<FBMask> mask;
 
   @Override public String toString() {
     return "FBMaskConfig{" +
-        "fbMasks=" + fb_mask.size() +
+        "fbMasks=" + mask.size() +
         "个}";
   }
 
   public List<FBMask> getMasks() {
-    return fb_mask;
+    return mask;
   }
 
   public FBMaskConfig(List<FBMask> masks) {
-    this.fb_mask = masks;
+    this.mask = masks;
   }
 
-  public void setMasks(List<FBMask> tiMasks) { this.fb_mask = tiMasks;}
+  public void setMasks(List<FBMask> tiMasks) { this.mask = tiMasks;}
 
   public static class FBMask {
 

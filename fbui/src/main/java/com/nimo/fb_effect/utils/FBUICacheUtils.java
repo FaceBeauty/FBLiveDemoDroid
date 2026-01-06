@@ -140,6 +140,82 @@ public class FBUICacheUtils {
 
     //-------------------------------------------------
 
+    //--------------特效滤镜----------------------------------
+
+    public static int getEffectFilterPosition() {
+
+        return SharedPreferencesUtil.get(FBUICacheKey.EFFECT_FILTER_SELECT_POSITION.name(),
+                FBUICacheKey.EFFECT_FILTER_SELECT_POSITION.getDefaultInt());
+    }
+
+    public static void setEffectFilterPosition(int position) {
+        SharedPreferencesUtil.put(FBUICacheKey.EFFECT_FILTER_SELECT_POSITION.name(), position);
+    }
+
+    public static String getEffectFilterName() {
+
+        return SharedPreferencesUtil.get(FBUICacheKey.EFFECT_FILTER_SELECT_NAME.name(),
+                FBUICacheKey.EFFECT_FILTER_SELECT_NAME.getDefaultStr());
+    }
+
+    public static void setEffectFilterName(String name) {
+        SharedPreferencesUtil.put(FBUICacheKey.EFFECT_FILTER_SELECT_NAME.name(), name);
+    }
+
+    //-------------------------------------------------
+    //---------------趣味滤镜----------------------------------
+
+    public static int getFunnyFilterPosition() {
+
+        return SharedPreferencesUtil.get(FBUICacheKey.FUNNY_FILTER_SELECT_POSITION.name(),
+                FBUICacheKey.FUNNY_FILTER_SELECT_POSITION.getDefaultInt());
+    }
+
+    public static void setFunnyFilterPosition(int position) {
+        SharedPreferencesUtil.put(FBUICacheKey.FUNNY_FILTER_SELECT_POSITION.name(), position);
+    }
+
+    public static String getFunnyFilterName() {
+
+        return SharedPreferencesUtil.get(FBUICacheKey.FUNNY_FILTER_SELECT_NAME.name(),
+                FBUICacheKey.FUNNY_FILTER_SELECT_NAME.getDefaultStr());
+    }
+
+    public static void setFunnyFilterName(String name) {
+        SharedPreferencesUtil.put(FBUICacheKey.FUNNY_FILTER_SELECT_NAME.name(), name);
+    }
+    //-------------------------------------------------
+
+    //---------------美发----------------------------------
+
+    public static int getBeautyHairPosition() {
+
+        return SharedPreferencesUtil.get(FBUICacheKey.HAIR_SELECT_POSITION.name(),
+                FBUICacheKey.HAIR_SELECT_POSITION.getDefaultInt());
+    }
+
+    public static void setBeautyHairPosition(int position) {
+        SharedPreferencesUtil.put(FBUICacheKey.HAIR_SELECT_POSITION.name(), position);
+    }
+
+    public static String getBeautyHairName() {
+
+        return SharedPreferencesUtil.get(FBUICacheKey.HAIR_SELECT_NAME.name(),
+                FBUICacheKey.HAIR_SELECT_NAME.getDefaultStr());
+    }
+
+    public static void setBeautyHairName(String name) {
+        SharedPreferencesUtil.put(FBUICacheKey.HAIR_SELECT_NAME.name(), name);
+    }
+
+    public static int setBeautyHairValue(String hairName) {
+        return SharedPreferencesUtil.get("hair_" + hairName, 50);
+    }
+
+    public static void setBeautyHairValue(String hairName, int value) {
+        SharedPreferencesUtil.put("hair_" + hairName, value);
+    }
+    //-----------------
 
 
     public static int previewInitialWidth() {
@@ -186,6 +262,7 @@ public class FBUICacheUtils {
                 defaultValue = 60;
                 break;
             case clearness:
+                defaultValue = 30;
                 break;
             case sharpfeatured:
                 defaultValue = 40;

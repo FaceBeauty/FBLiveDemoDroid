@@ -107,6 +107,8 @@
     <string name="face">Face</string>
     <string name="mask">Mask</string>
     <string name="gift">Gift</string>
+    <string name="hair">Hair</string>
+    <string name="haha">haha</string>
 
     <string name="hair_none">NONE</string>
     <string name="hair_shenmizi">shenmizi</string>

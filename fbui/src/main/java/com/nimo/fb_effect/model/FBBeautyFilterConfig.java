@@ -13,23 +13,23 @@ public class FBBeautyFilterConfig {
   /**
    * stickers
    */
-  private List<FBBeautyFilter> fb_style_filter;
+  private List<FBBeautyFilter> style_filter;
 
   @Override public String toString() {
     return "FBStyleFilterConfig{" +
-        "fbFilters=" + fb_style_filter.size() +
+        "fbFilters=" + style_filter.size() +
         "个}";
   }
 
   public List<FBBeautyFilter> getFilters() {
-    return fb_style_filter;
+    return style_filter;
   }
 
   public FBBeautyFilterConfig(List<FBBeautyFilter> filters) {
-    this.fb_style_filter = filters;
+    this.style_filter = filters;
   }
 
-  public void setFilters(List<FBBeautyFilter> fbFilters) { this.fb_style_filter = fbFilters;}
+  public void setFilters(List<FBBeautyFilter> fbFilters) { this.style_filter = fbFilters;}
 
   public static class FBBeautyFilter {
 
@@ -77,6 +77,7 @@ public class FBBeautyFilterConfig {
     public String getUrl() {
 
       return FBEffect.shareInstance().getFilterUrl() + name + ".zip";
+
 
     }
 

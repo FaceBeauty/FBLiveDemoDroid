@@ -74,11 +74,11 @@ public class FBARStickerFragment extends FBBaseFragment {
 
 
     //恢复美颜默认值
-    FBUICacheUtils.resetSkinValue(getContext());
-    FBUICacheUtils.beautySkinResetEnable(false);
-
-    FBUICacheUtils.resetFaceTrimValue(getContext());
-    FBUICacheUtils.beautyFaceTrimResetEnable(false);
+//    FBUICacheUtils.resetSkinValue(getContext());
+//    FBUICacheUtils.beautySkinResetEnable(false);
+//
+//    FBUICacheUtils.resetFaceTrimValue(getContext());
+//    FBUICacheUtils.beautyFaceTrimResetEnable(false);
 
     FBSelectedPosition.POSITION_STICKER = 0;
     FBEffect.shareInstance().setARItem(FBItemEnum.FBItemSticker.getValue(), "");
@@ -156,5 +156,12 @@ public class FBARStickerFragment extends FBBaseFragment {
 
   @Override public void onDestroyView() {
     super.onDestroyView();
+  }
+
+  @Override
+  public void onDestroy() {
+    FBEffect.shareInstance().setARItem(FBItemEnum.FBItemSticker.getValue(), "");
+    FBSelectedPosition.POSITION_STICKER = -1;
+    super.onDestroy();
   }
 }

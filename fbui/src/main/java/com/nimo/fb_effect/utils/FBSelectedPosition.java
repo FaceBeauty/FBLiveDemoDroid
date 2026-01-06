@@ -32,7 +32,7 @@ public class FBSelectedPosition {
     public static int POSITION_BLUSH_COLOR = 0;
 
 
-    public static int POSITION_HAIR = 0;
+    public static int POSITION_HAIR = -1;
 
     public static int POSITION_GREEN_SCREEN_EDIT = 0;
     public static int POSITION_GREEN_SCREEN_COLOR = 0;

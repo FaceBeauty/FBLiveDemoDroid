@@ -7,13 +7,19 @@ import android.os.Handler;
 import android.os.Looper;
 import android.text.TextUtils;
 import android.util.Log;
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.nimo.fb_effect.model.FBEffectFilterConfig;
+import com.nimo.fb_effect.model.FBFunnyFilterConfig;
+import com.nimo.fb_effect.model.FBHairConfig;
 import com.nimo.fb_effect.model.FBMaskConfig;
 import com.nimo.fb_effect.model.FBStickerConfig;
 import com.nimo.fb_effect.model.FBBeautyFilterConfig;
 import com.nimo.facebeauty.FBEffect;
 import com.nimo.facebeauty.model.FBItemEnum;
+import com.nimo.fb_effect.model.FBWatermarkConfig;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -37,12 +43,23 @@ public class FBConfigTools {
   private String PATH_STICKER;
   //面具配置的文件路径
   private String PATH_MASK;
+  //面具配置的文件路径
+  private String PATH_HAIR;
 
   //风格滤镜配置文件
   private String PATH_BEAUTY_FILTER;
-
+  //哈哈镜配置文件
+  private String PATH_FUNNY_FILTER;
+  //水印配置文件
+  private String PATH_WATER_MARK;
+  //特效滤镜配置文件
+  private String PATH_EFFECT_FILTER;
   private FBStickerConfig stickerList;
+  private FBFunnyFilterConfig funnyFilterList;
+  private FBWatermarkConfig watermarkList;
   private FBMaskConfig maskList;
+  private FBHairConfig hairList;
+  private FBEffectFilterConfig effectFilterList;//特效滤镜
   private FBBeautyFilterConfig beautyFilterList;
 
   private final ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
@@ -57,13 +74,20 @@ public class FBConfigTools {
     instance = this;
 
     //贴纸配置的文件路径
-    PATH_STICKER = FBEffect.shareInstance().getARItemPathBy(FBItemEnum.FBItemSticker.getValue()) + File.separator + "fb_sticker_config.json";
+    PATH_STICKER = FBEffect.shareInstance().getARItemPathBy(FBItemEnum.FBItemSticker.getValue()) + File.separator + "sticker_config.json";
     //面具配置的文件路径
-    PATH_MASK = FBEffect.shareInstance().getARItemPathBy(FBItemEnum.FBItemMask.getValue()) + File.separator + "fb_mask_config.json";
+    PATH_MASK = FBEffect.shareInstance().getARItemPathBy(FBItemEnum.FBItemMask.getValue()) + File.separator + "mask_config.json";
+    //美发配置的文件路径
+    PATH_HAIR = context.getFilesDir().getAbsolutePath()+ "/fbeffect/hair/hair_config.json";
 
     //滤镜配置文件
-    PATH_BEAUTY_FILTER = FBEffect.shareInstance().getFilterPath() + File.separator + "fb_style_filter_config.json";
-
+    PATH_BEAUTY_FILTER = FBEffect.shareInstance().getFilterPath() + File.separator + "style_filter_config.json";
+    //哈哈镜
+    PATH_FUNNY_FILTER = FBEffect.shareInstance().getFilterPath() + File.separator + "funny_filter_config.json";
+    //特效滤镜
+    PATH_EFFECT_FILTER = FBEffect.shareInstance().getFilterPath() + File.separator + "effect_filter_config.json";
+    //水印配置文件
+    PATH_WATER_MARK = FBEffect.shareInstance().getARItemPathBy(FBItemEnum.FBItemWatermark.getValue()) + File.separator + "watermark_config.json";
   }
 
   public static FBConfigTools getInstance() {
@@ -81,13 +105,107 @@ public class FBConfigTools {
     if (maskList == null) return null;
     return maskList;
   }
-
-
+  public FBHairConfig getHairList() {
+    if (hairList == null) return null;
+    return hairList;
+  }
+  public FBWatermarkConfig getWatermarkList() {
+    if (watermarkList == null) return null;
+    return watermarkList;
+  }
+  public FBFunnyFilterConfig getFunnyFilterConfig() {
+    if (funnyFilterList == null) return null;
+    return funnyFilterList;
+  }
   public FBBeautyFilterConfig getBeautyFilterConfig() {
     if (beautyFilterList == null) return null;
     return beautyFilterList;
   }
 
+  /**
+   * 特效滤镜
+   * @return
+   */
+  public FBEffectFilterConfig getEffectFilterConfig() {
+    if (effectFilterList == null) return null;
+    return effectFilterList;
+  }
+  /**
+   * 获取缓存文件中特效滤镜配置
+   */
+  public void getEffectFiltersConfig(FBConfigCallBack<List<FBEffectFilterConfig.FBEffectFilter>> callBack) {
+    cachedThreadPool.execute(new Runnable() {
+      @Override public void run() {
+        try {
+          String res = getFileString(PATH_EFFECT_FILTER);
+          if (TextUtils.isEmpty(res)) {
+            uiHandler.post(new Runnable() {
+              @Override public void run() {
+                callBack.success(new ArrayList<>());
+              }
+            });
+          } else {
+            effectFilterList = new Gson().fromJson(res, new TypeToken<FBEffectFilterConfig>() {}.getType());
+            uiHandler.post(new Runnable() {
+              @Override public void run() {
+                callBack.success(effectFilterList.getFilters());
+              }
+            });
+          }
+
+        } catch (Exception e) {
+          uiHandler.post(new Runnable() {
+            @Override public void run() {
+              callBack.fail(e);
+            }
+          });
+        }
+      }
+    });
+  }
+  /**
+   * 更新特效滤镜文件
+   */
+  public void effectFilterDownload(String content) {
+    cachedThreadPool.execute(new Runnable() {
+      @Override public void run() {
+        modifyFile(content, PATH_EFFECT_FILTER);
+      }
+    });
+  }
+  /**
+   * 从缓存文件中获取水印配置文件
+   */
+  public void getWatermarksConfig(FBConfigCallBack<List<FBWatermarkConfig.FBWatermark>> callBack) {
+    cachedThreadPool.execute(new Runnable() {
+      @Override public void run() {
+        try {
+          String result = getFileString(PATH_WATER_MARK);
+
+          if (TextUtils.isEmpty(result)) {
+            Log.i("读取绿幕配置文件：", "内容为空");
+            uiHandler.post(new Runnable() {
+              @Override public void run() {
+                callBack.success(new ArrayList<>());
+              }
+            });
+
+          } else {
+            watermarkList = new Gson().fromJson(result, new TypeToken<FBWatermarkConfig>() {}.getType());
+            uiHandler.post(new Runnable() {
+              @Override public void run() {
+                callBack.success(watermarkList.getWatermarks());
+              }
+            });
+          }
+
+        } catch (IOException e) {
+          e.printStackTrace();
+          callBack.fail(e);
+        }
+      }
+    });
+  }
   /**
    * 获取缓存文件中贴纸配置
    */
@@ -121,7 +239,16 @@ public class FBConfigTools {
       }
     });
   }
-
+  /**
+   * 更新水印缓存文件
+   */
+  public void watermarkDownload(String content) {
+    cachedThreadPool.execute(new Runnable() {
+      @Override public void run() {
+        modifyFile(content, PATH_WATER_MARK);
+      }
+    });
+  }
   /**
    * 更新贴纸文件
    */
@@ -166,7 +293,82 @@ public class FBConfigTools {
       }
     });
   }
+  /**
+   * 获取缓存文件中美发配置
+   */
+  public void getHairsConfig(FBConfigCallBack<List<FBHairConfig.FBHair>> callBack) {
+    cachedThreadPool.execute(new Runnable() {
+      @Override public void run() {
+        try {
+          String res = getFileString(PATH_HAIR);
+          if (TextUtils.isEmpty(res)) {
+            uiHandler.post(new Runnable() {
+              @Override public void run() {
+                callBack.success(new ArrayList<>());
+              }
+            });
+          } else {
+            hairList = new Gson().fromJson(res, new TypeToken<FBHairConfig>() {}.getType());
+            uiHandler.post(new Runnable() {
+              @Override public void run() {
+                callBack.success(hairList.getHairs());
+              }
+            });
+          }
 
+        } catch (Exception e) {
+          uiHandler.post(new Runnable() {
+            @Override public void run() {
+              callBack.fail(e);
+            }
+          });
+        }
+      }
+    });
+  }
+  /**
+   * 获取缓存文件中哈哈镜配置
+   */
+  public void getFunnyFiltersConfig(FBConfigCallBack<List<FBFunnyFilterConfig.FBFunnyFilter>> callBack) {
+    cachedThreadPool.execute(new Runnable() {
+      @Override public void run() {
+        try {
+          String res = getFileString(PATH_FUNNY_FILTER);
+          if (TextUtils.isEmpty(res)) {
+            uiHandler.post(new Runnable() {
+              @Override public void run() {
+                callBack.success(new ArrayList<>());
+              }
+            });
+          } else {
+            funnyFilterList = new Gson().fromJson(res, new TypeToken<FBFunnyFilterConfig>() {}.getType());
+            uiHandler.post(new Runnable() {
+              @Override public void run() {
+                callBack.success(funnyFilterList.getFilters());
+              }
+            });
+          }
+
+        } catch (Exception e) {
+          uiHandler.post(new Runnable() {
+            @Override public void run() {
+              callBack.fail(e);
+            }
+          });
+        }
+      }
+    });
+  }
+  /**
+   * 更新哈哈镜文件
+   */
+  public void hahaFilterDownload(String content) {
+    cachedThreadPool.execute(new Runnable() {
+      @Override public void run() {
+        modifyFile(content, PATH_FUNNY_FILTER);
+      }
+    });
+  }
   /**
    * 更新mask文件
    *
@@ -179,7 +381,16 @@ public class FBConfigTools {
       }
     });
   }
-
+  /**
+   * 更新美发文件
+   */
+  public void hairDownload(String content) {
+    cachedThreadPool.execute(new Runnable() {
+      @Override public void run() {
+        modifyFile(content, PATH_HAIR);
+      }
+    });
+  }
 
   /**
    * 获取缓存文件中风格滤镜配置
@@ -321,7 +532,7 @@ public class FBConfigTools {
     cachedThreadPool.execute(new Runnable() {
       @Override public void run() {
         try {
-          String newSticker = getJsonString(context, "sticker/fb_sticker_config.json");
+          String newSticker = getJsonString(context, "sticker/sticker_config.json");
           modifyFile(newSticker, PATH_STICKER);
         } catch (IOException e) {
           e.printStackTrace();
@@ -334,7 +545,13 @@ public class FBConfigTools {
         } catch (IOException e) {
           e.printStackTrace();
         }
-
+        String newWatermark;
+        try {
+          newWatermark = getJsonString(context, "watermark/watermarks.json");
+          modifyFile(newWatermark, PATH_WATER_MARK);
+        } catch (IOException e) {
+          e.printStackTrace();
+        }
       }
     });
   }

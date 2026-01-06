@@ -20,12 +20,16 @@ import androidx.core.content.ContextCompat;
 import androidx.core.view.MotionEventCompat;
 import androidx.appcompat.widget.AppCompatImageView;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 
 import com.nimo.fb_effect.R;
 import com.nimo.facebeauty.FBEffect;
 import com.nimo.facebeauty.model.FBItemEnum;
+import com.nimo.fb_effect.view.FBResetAllDialog;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 //import miaoyongjun.stickerview.R;
 /**
@@ -54,6 +58,7 @@ public class StickerView extends AppCompatImageView {
     private float degree;
     private boolean isFocus;
     private float[] finalPoints;
+    private final String TAG = "StickerView";
 
     public StickerView(Context context) {
         super(context);
@@ -155,6 +160,8 @@ public class StickerView extends AppCompatImageView {
     }
 
     private void drawStickers(Canvas canvas) {
+
+
         for (Sticker sticker : mStickers) {
             if (!sticker.isInit()) {
                 float imageWidth = imageBeginScale * getMeasuredWidth();
@@ -173,6 +180,7 @@ public class StickerView extends AppCompatImageView {
             int W = canvas.getWidth();
             int H = canvas.getHeight();
             float[] newPoints = new float[8];
+
             // if(finalPoints != points && finalPoints != null){
             //     newPoints[0] = finalPoints[0] / W;
             //     newPoints[1] = finalPoints[1] / H;
@@ -253,6 +261,7 @@ public class StickerView extends AppCompatImageView {
         float evY = event.getY(0);
         int action = MotionEventCompat.getActionMasked(event);
         mRotation = StickerUtil.calculateRotation(event);
+
         switch (action) {
             case MotionEvent.ACTION_POINTER_DOWN:
                 midPoint = calculateMidPoint(event);
@@ -324,6 +333,7 @@ public class StickerView extends AppCompatImageView {
         lastPoint.y = evY;
         return true;
     }
+
 
     private void rotateAndScaleDoubleTouch(MotionEvent event) {
         if (event.getPointerCount() < 2) {

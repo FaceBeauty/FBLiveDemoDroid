@@ -120,7 +120,27 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
                tags = { @Tag(FBEventAction.ACTION_SYNC_PROGRESS) })
     public void syncProgress(Object o) {
 
+        //美发
+        if (FBState.currentViewState == FBViewState.BEAUTY_HAIR
+                && FBState.currentSecondViewState == FBViewState.BEAUTY_HAIR) {
 
+            //美发效果未选中，隐藏滑动条
+            if (FBUICacheUtils.getBeautyHairPosition() == 0) {
+
+                setVisibility(INVISIBLE);
+                return;
+            } else {
+                setVisibility(VISIBLE);
+            }
+
+            int progress = FBUICacheUtils
+                    .setBeautyHairValue(FBState.currentHair.getName());
+            Log.e("当前模块:", FBState.currentHair.getName());
+            Log.e("美发滑动参数同步:", progress + "");
+            fbSeekBar.setProgress(progress);
+            styleNormal(FBUICacheUtils.setBeautyHairValue(FBState.currentHair.getName()));
+            return;
+        }
         //美颜——美颜
         if (FBState.currentViewState == FBViewState.BEAUTY
             && FBState.currentSecondViewState == FBViewState.BEAUTY_SKIN) {
@@ -508,6 +528,17 @@ public class FBBarView extends LinearLayout implements SeekBar.OnSeekBarChangeLi
             Log.e("美型" + FBState.currentFaceTrim, progress + "");
             FBUICacheUtils.beautyFaceTrimValue(FBState.currentFaceTrim, progress);
 
+            return;
+        }
+        //美发
+        if (FBState.currentViewState == FBViewState.BEAUTY_HAIR
+                && FBState.currentSecondViewState == FBViewState.BEAUTY_HAIR) {
+
+            styleNormal(progress);
+            Log.e("美发" + FBState.currentHair.getName(), progress + "%");
+            FBUICacheUtils.setBeautyHairValue(FBState.currentHair.getName(), progress);
+
+            FBEffect.shareInstance().setHairStyling(FBState.currentHair.getId(), progress);
             return;
         }
 

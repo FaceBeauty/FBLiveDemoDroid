@@ -2,4 +2,6 @@
     <string name="app_name">FaceBeautyDemo</string>
     <string name="select_image">选择图片</string>
     <string name="render">渲染</string>
+    <string name="permissions_notice">设备信息权限使用说明</string>
+    <string name="permission_description">为正常使用拍照及录制功能，FaceBeauty需要申请你的设备传感器信息，拍照及录音权限</string>
 </resources>

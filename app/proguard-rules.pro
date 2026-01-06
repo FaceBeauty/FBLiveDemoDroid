@@ -43,3 +43,6 @@
 
 ##---------------End: proguard configuration for Gson  ----------
 
+-keep class  com.nimo.fb_effect.** { <fields>; }
+-keep class  com.nimo.** { <fields>; }
+

@@ -65,7 +65,8 @@ public class FBResetAllDialog extends DialogFragment {
           FBUICacheUtils.resetFaceTrimValue(getContext());
           FBUICacheUtils.beautyFaceTrimResetEnable(false);
 
-
+          FBEffect.shareInstance().setHairStyling(0, 0);
+          FBUICacheUtils.setBeautyHairPosition(0);
           FBSelectedPosition.POSITION_STICKER = -1;
           FBEffect.shareInstance().setARItem(FBItemEnum.FBItemSticker.getValue(), "");
           RxBus.get().post(FBEventAction.ACTION_SYNC_STICKER_ITEM_CHANGED, "");

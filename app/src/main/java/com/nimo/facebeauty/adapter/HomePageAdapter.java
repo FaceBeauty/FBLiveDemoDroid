@@ -10,7 +10,8 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.recyclerview.widget.RecyclerView;
 import com.nimo.facebeauty.R;
 import com.nimo.facebeauty.FBApplication;
-import com.nimo.facebeauty.activity.Camera2Activity;
+//import com.nimo.facebeauty.activity.Camera2Activity;
+import com.nimo.facebeauty.activity.CameraActivity;
 import com.nimo.facebeauty.activity.MainActivity;
 import com.nimo.facebeauty.activity.SampleCameraActivity;
 import com.nimo.facebeauty.model.HomePageItem;
@@ -27,7 +28,7 @@ public class HomePageAdapter extends RecyclerView.Adapter<HomePageAdapter.ViewHo
   public HomePageAdapter(@NonNull Activity activity) {
     this.items = new ArrayList<>();
     items.add(new HomePageItem("最简示例(无Camera模块)", SampleCameraActivity.class));
-    items.add(new HomePageItem("Camera2自采集示例", Camera2Activity.class));
+    items.add(new HomePageItem("Camera2自采集示例", CameraActivity.class));
     this.activity = activity;
   }
 
