@@ -1,0 +1,28 @@
+{
+    "watermark": [
+        {
+            "name": "upload_watermark",
+            "category": "upload_watermark",
+            "icon": "shuiyin_shangchuan.png",
+            "download": 2
+        },
+        {
+            "name": "watermark_effect_manchang",
+            "category": "default",
+            "icon": "watermark_effect_manchang_icon.png",
+            "download": 2
+        },
+        {
+            "name": "watermark_effect_life",
+            "category": "default",
+            "icon": "watermark_effect_life_icon.png",
+            "download": 2
+        },
+        {
+            "name": "watermark_effect_diary",
+            "category": "default",
+            "icon": "watermark_effect_diary_icon.png",
+            "download": 2
+        }
+    ]
+}

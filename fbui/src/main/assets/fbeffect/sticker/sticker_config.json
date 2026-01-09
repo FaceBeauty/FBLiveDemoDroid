@@ -1,0 +1,311 @@
+{
+    "sticker": [
+        {
+            "name": "sticker_effect_none",
+            "category": "default",
+            "icon": "icon_cancel.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_apple",
+            "category": "default",
+            "icon": "icon_sticker_effect_apple.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_appletree",
+            "category": "default",
+            "icon": "icon_sticker_effect_appletree.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_buding",
+            "category": "default",
+            "icon": "icon_sticker_effect_buding.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_cheer",
+            "category": "default",
+            "icon": "icon_sticker_effect_cheer.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_chushimao",
+            "category": "default",
+            "icon": "icon_sticker_effect_chushimao.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_daxiang",
+            "category": "default",
+            "icon": "icon_sticker_effect_daxiang.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_dogdog",
+            "category": "default",
+            "icon": "icon_sticker_effect_dogdog.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_erji",
+            "category": "default",
+            "icon": "icon_sticker_effect_erji.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_fdj",
+            "category": "default",
+            "icon": "icon_sticker_effect_fdj.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_huahuan",
+            "category": "default",
+            "icon": "icon_sticker_effect_huahuan.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_huahuan1",
+            "category": "default",
+            "icon": "icon_sticker_effect_huahuan1.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_huangguan",
+            "category": "default",
+            "icon": "icon_sticker_effect_huangguan.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_hudie",
+            "category": "default",
+            "icon": "icon_sticker_effect_hudie.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_hudiejie",
+            "category": "default",
+            "icon": "icon_sticker_effect_hudiejie.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_huluobo",
+            "category": "default",
+            "icon": "icon_sticker_effect_huluobo.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_huzi",
+            "category": "default",
+            "icon": "icon_sticker_effect_huzi.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_jiafei",
+            "category": "default",
+            "icon": "icon_sticker_effect_jiafei.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_jixie",
+            "category": "default",
+            "icon": "icon_sticker_effect_jixie.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_kaola",
+            "category": "default",
+            "icon": "icon_sticker_effect_kaola.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_kt",
+            "category": "default",
+            "icon": "icon_sticker_effect_kt.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_lan",
+            "category": "default",
+            "icon": "icon_sticker_effect_lan.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_laoshu",
+            "category": "default",
+            "icon": "icon_sticker_effect_laoshu.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_laoshu1",
+            "category": "default",
+            "icon": "icon_sticker_effect_laoshu1.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_lu",
+            "category": "default",
+            "icon": "icon_sticker_effect_lu.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_maimai",
+            "category": "default",
+            "icon": "icon_sticker_effect_maimai.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_maliao",
+            "category": "default",
+            "icon": "icon_sticker_effect_maliao.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_mao",
+            "category": "default",
+            "icon": "icon_sticker_effect_mao.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_mifeng",
+            "category": "default",
+            "icon": "icon_sticker_effect_mifeng.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_red",
+            "category": "default",
+            "icon": "icon_sticker_effect_red.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_shengdan",
+            "category": "default",
+            "icon": "icon_sticker_effect_shengdan.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_shengrimao",
+            "category": "default",
+            "icon": "icon_fb_sticker_effect_shengrimao.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_star",
+            "category": "default",
+            "icon": "icon_sticker_effect_star.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_tianshi",
+            "category": "default",
+            "icon": "icon_sticker_effect_tianshi.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_tu",
+            "category": "default",
+            "icon": "icon_sticker_effect_tu.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_tuzi",
+            "category": "default",
+            "icon": "icon_sticker_effect_tuzi.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_tuzifagu",
+            "category": "default",
+            "icon": "icon_sticker_effect_tuzifagu.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_xiaogou",
+            "category": "default",
+            "icon": "icon_sticker_effect_xiaogou.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_xiaolu",
+            "category": "default",
+            "icon": "icon_sticker_effect_xiaolu.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_xiaomao",
+            "category": "default",
+            "icon": "icon_sticker_effect_xiaomao.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_xiaoxiong",
+            "category": "default",
+            "icon": "icon_sticker_effect_xiaoxiong.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_xiaoxiongmao",
+            "category": "default",
+            "icon": "icon_sticker_effect_xiaoxiongmao.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_xiaoyang",
+            "category": "default",
+            "icon": "icon_sticker_effect_xiaoyang.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_xiaozhu",
+            "category": "default",
+            "icon": "icon_sticker_effect_xiaozhu.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_xinchun",
+            "category": "default",
+            "icon": "icon_sticker_effect_xinchun.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_xiong",
+            "category": "default",
+            "icon": "icon_sticker_effect_xiong.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_yaya",
+            "category": "default",
+            "icon": "icon_sticker_effect_yaya.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_yeah",
+            "category": "default",
+            "icon": "icon_sticker_effect_yeah.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_yeah1",
+            "category": "default",
+            "icon": "icon_sticker_effect_yeah1.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_yusan",
+            "category": "default",
+            "icon": "icon_sticker_effect_yusan.png",
+            "download": 2
+        },
+        {
+            "name": "sticker_effect_zhu",
+            "category": "default",
+            "icon": "icon_sticker_effect_zhu.png",
+            "download": 2
+        }
+
+    ]
+}

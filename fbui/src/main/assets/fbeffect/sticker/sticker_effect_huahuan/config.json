@@ -1,0 +1,32 @@
+{
+  "HTSMGroupList": [
+    {
+      "dirName": "p_huahuan",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 0.03,
+      "yOffset": -0.83,
+      "widthOffset": 1.57,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 552,
+      "imageHeight": 302,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_hudie",
+      "type": 3,
+      "trackPart": 4,
+      "xOffset": -0.05,
+      "yOffset": -0.11,
+      "widthOffset": 0.53,
+      "heightOffset": 0,
+      "imageNumber": 10,
+      "scene": 0,
+      "imageWidth": 200,
+      "imageHeight": 200,
+      "triggerType": 0
+    }
+  ]
+}

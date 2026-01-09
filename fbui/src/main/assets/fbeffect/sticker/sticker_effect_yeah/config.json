@@ -1,0 +1,74 @@
+{
+  "HTSMGroupList": [
+    {
+      "dirName": "p_cup",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 0.06,
+      "yOffset": -1.06,
+      "widthOffset": -0.15,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 166,
+      "imageHeight": 154,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_left",
+      "type": 3,
+      "trackPart": 4,
+      "xOffset": -0.57,
+      "yOffset": -0.06,
+      "widthOffset": 1.1,
+      "heightOffset": 0,
+      "imageNumber": 10,
+      "scene": 0,
+      "imageWidth": 200,
+      "imageHeight": 200,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_right",
+      "type": 3,
+      "trackPart": 4,
+      "xOffset": 0.55,
+      "yOffset": -0.05,
+      "widthOffset": 1.1,
+      "heightOffset": 0,
+      "imageNumber": 10,
+      "scene": 0,
+      "imageWidth": 200,
+      "imageHeight": 200,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_star",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": -1.06,
+      "yOffset": -0.69,
+      "widthOffset": -0.43,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 103,
+      "imageHeight": 159,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_yeah",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 1.1,
+      "yOffset": -0.66,
+      "widthOffset": -0.77,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 47,
+      "imageHeight": 300,
+      "triggerType": 0
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "HTSMGroupList": [
+    {
+      "dirName": "p_head",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 0.71,
+      "yOffset": -1.1,
+      "widthOffset": 0,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 219,
+      "imageHeight": 169,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_huangguan",
+      "type": 3,
+      "trackPart": 4,
+      "xOffset": -0.03,
+      "yOffset": -0.06,
+      "widthOffset": 0.98,
+      "heightOffset": 0,
+      "imageNumber": 20,
+      "scene": 0,
+      "imageWidth": 270,
+      "imageHeight": 129,
+      "triggerType": 0
+    }
+  ]
+}

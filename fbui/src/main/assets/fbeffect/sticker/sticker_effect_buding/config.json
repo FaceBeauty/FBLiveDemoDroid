@@ -1,0 +1,74 @@
+{
+  "HTSMGroupList": [
+    {
+      "dirName": "p_buding",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 0.05,
+      "yOffset": -1.24,
+      "widthOffset": 0.26,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 282,
+      "imageHeight": 225,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_left",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": -0.98,
+      "yOffset": -1.02,
+      "widthOffset": -0.32,
+      "heightOffset": 0,
+      "imageNumber": 20,
+      "scene": 0,
+      "imageWidth": 146,
+      "imageHeight": 202,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_right",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 0.97,
+      "yOffset": -1.41,
+      "widthOffset": -0.3,
+      "heightOffset": 0,
+      "imageNumber": 20,
+      "scene": 0,
+      "imageWidth": 146,
+      "imageHeight": 215,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_saihong",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 0,
+      "yOffset": 0.12,
+      "widthOffset": 0.41,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 286,
+      "imageHeight": 25,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_zi",
+      "type": 3,
+      "trackPart": 9,
+      "xOffset": -0.7,
+      "yOffset": 0.43,
+      "widthOffset": 0.24,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 141,
+      "imageHeight": 42,
+      "triggerType": 0
+    }
+  ]
+}

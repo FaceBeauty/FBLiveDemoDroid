@@ -1,0 +1,32 @@
+{
+  "HTSMGroupList": [
+    {
+      "dirName": "p_head",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 0.57,
+      "yOffset": -1,
+      "widthOffset": 0.44,
+      "heightOffset": 0,
+      "imageNumber": 10,
+      "scene": 0,
+      "imageWidth": 200,
+      "imageHeight": 200,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_nose",
+      "type": 3,
+      "trackPart": 4,
+      "xOffset": -0.01,
+      "yOffset": 0.01,
+      "widthOffset": 0.48,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 173,
+      "imageHeight": 96,
+      "triggerType": 0
+    }
+  ]
+}

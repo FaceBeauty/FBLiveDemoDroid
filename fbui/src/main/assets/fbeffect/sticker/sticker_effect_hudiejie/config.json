@@ -1,0 +1,74 @@
+{
+  "HTSMGroupList": [
+    {
+      "dirName": "p_yinfu",
+      "type": 3,
+      "trackPart": 7,
+      "xOffset": -1.16,
+      "yOffset": 0.05,
+      "widthOffset": -0.1,
+      "heightOffset": 0,
+      "imageNumber": 10,
+      "scene": 0,
+      "imageWidth": 200,
+      "imageHeight": 200,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_star",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 0.66,
+      "yOffset": -0.98,
+      "widthOffset": -0.11,
+      "heightOffset": 0,
+      "imageNumber": 10,
+      "scene": 0,
+      "imageWidth": 200,
+      "imageHeight": 200,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_hudiejie",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": -0.98,
+      "yOffset": -0.95,
+      "widthOffset": -0.43,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 119,
+      "imageHeight": 77,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_hua",
+      "type": 3,
+      "trackPart": 6,
+      "xOffset": 0.76,
+      "yOffset": 0.07,
+      "widthOffset": 0.24,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 82,
+      "imageHeight": 77,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_eye",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 0.01,
+      "yOffset": -0.1,
+      "widthOffset": 0.6,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 365,
+      "imageHeight": 127,
+      "triggerType": 0
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "HTSMGroupList": [
+    {
+      "dirName": "p_ear",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 0.17,
+      "yOffset": -1.32,
+      "widthOffset": 1.75,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 1600,
+      "imageHeight": 615,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_nose",
+      "type": 3,
+      "trackPart": 4,
+      "xOffset": 0.01,
+      "yOffset": 0.02,
+      "widthOffset": 0.02,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 251,
+      "imageHeight": 171,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_saihong",
+      "type": 3,
+      "trackPart": 4,
+      "xOffset": 0.02,
+      "yOffset": -0.03,
+      "widthOffset": 1.4,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 1504,
+      "imageHeight": 539,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_star",
+      "type": 3,
+      "trackPart": 9,
+      "xOffset": -1.16,
+      "yOffset": 0.24,
+      "widthOffset": -0.08,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 177,
+      "imageHeight": 191,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_xin",
+      "type": 3,
+      "trackPart": 9,
+      "xOffset": 1.05,
+      "yOffset": 0.49,
+      "widthOffset": -0.14,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 141,
+      "imageHeight": 281,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_yezi",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": -1.38,
+      "yOffset": -0.57,
+      "widthOffset": -0.32,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 142,
+      "imageHeight": 121,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_zui",
+      "type": 3,
+      "trackPart": 7,
+      "xOffset": 0.21,
+      "yOffset": 0.03,
+      "widthOffset": -0.19,
+      "heightOffset": 0,
+      "imageNumber": 20,
+      "scene": 0,
+      "imageWidth": 233,
+      "imageHeight": 148,
+      "triggerType": 0
+    }
+  ]
+}

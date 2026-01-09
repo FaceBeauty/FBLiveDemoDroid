@@ -1,0 +1,32 @@
+{
+  "HTSMGroupList": [
+    {
+      "dirName": "p_head",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": -0.04,
+      "yOffset": -1.31,
+      "widthOffset": 1.84,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 513,
+      "imageHeight": 537,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_huxu",
+      "type": 3,
+      "trackPart": 4,
+      "xOffset": -0.02,
+      "yOffset": -0.06,
+      "widthOffset": 1.44,
+      "heightOffset": 0,
+      "imageNumber": 20,
+      "scene": 0,
+      "imageWidth": 392,
+      "imageHeight": 179,
+      "triggerType": 0
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "HTSMGroupList": [
+    {
+      "dirName": "p_faqia",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 0.78,
+      "yOffset": -0.68,
+      "widthOffset": -0.43,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 115,
+      "imageHeight": 109,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_left",
+      "type": 3,
+      "trackPart": 6,
+      "xOffset": -0.95,
+      "yOffset": 0.02,
+      "widthOffset": 0.19,
+      "heightOffset": 0,
+      "imageNumber": 20,
+      "scene": 0,
+      "imageWidth": 48,
+      "imageHeight": 46,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_right",
+      "type": 3,
+      "trackPart": 6,
+      "xOffset": 0.87,
+      "yOffset": 0,
+      "widthOffset": 0.19,
+      "heightOffset": 0,
+      "imageNumber": 20,
+      "scene": 0,
+      "imageWidth": 48,
+      "imageHeight": 46,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_tie",
+      "type": 3,
+      "trackPart": 4,
+      "xOffset": 0.01,
+      "yOffset": -0.13,
+      "widthOffset": 0.23,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 112,
+      "imageHeight": 54,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_zi",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": -0.79,
+      "yOffset": -1.06,
+      "widthOffset": 0.17,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 291,
+      "imageHeight": 147,
+      "triggerType": 0
+    }
+  ]
+}

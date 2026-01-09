@@ -1,0 +1,46 @@
+{
+  "HTSMGroupList": [
+    {
+      "dirName": "p_left",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": -0.78,
+      "yOffset": -0.9,
+      "widthOffset": 0.01,
+      "heightOffset": 0,
+      "imageNumber": 20,
+      "scene": 0,
+      "imageWidth": 173,
+      "imageHeight": 186,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_maozi",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 0.75,
+      "yOffset": -0.89,
+      "widthOffset": 0.22,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 263,
+      "imageHeight": 219,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_nose",
+      "type": 3,
+      "trackPart": 4,
+      "xOffset": -0.01,
+      "yOffset": -0.05,
+      "widthOffset": 0.19,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 99,
+      "imageHeight": 80,
+      "triggerType": 0
+    }
+  ]
+}

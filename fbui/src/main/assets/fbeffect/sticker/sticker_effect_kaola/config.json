@@ -1,0 +1,46 @@
+{
+  "HTSMGroupList": [
+    {
+      "dirName": "p_ear",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 0.07,
+      "yOffset": -0.68,
+      "widthOffset": 1.83,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 578,
+      "imageHeight": 246,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_nose",
+      "type": 3,
+      "trackPart": 4,
+      "xOffset": 0.03,
+      "yOffset": -0.05,
+      "widthOffset": 0.88,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 245,
+      "imageHeight": 99,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_paopao",
+      "type": 3,
+      "trackPart": 9,
+      "xOffset": 0.48,
+      "yOffset": 0.02,
+      "widthOffset": 1.14,
+      "heightOffset": 0,
+      "imageNumber": 20,
+      "scene": 0,
+      "imageWidth": 336,
+      "imageHeight": 260,
+      "triggerType": 0
+    }
+  ]
+}

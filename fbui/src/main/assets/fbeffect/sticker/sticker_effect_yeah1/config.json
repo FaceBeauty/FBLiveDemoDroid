@@ -1,0 +1,60 @@
+{
+  "HTSMGroupList": [
+    {
+      "dirName": "p_dian",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": -0.95,
+      "yOffset": -1.38,
+      "widthOffset": -0.38,
+      "heightOffset": 0,
+      "imageNumber": 20,
+      "scene": 0,
+      "imageWidth": 132,
+      "imageHeight": 138,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_head",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 0.05,
+      "yOffset": -0.88,
+      "widthOffset": 1.46,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 638,
+      "imageHeight": 376,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_star",
+      "type": 3,
+      "trackPart": 6,
+      "xOffset": 0.99,
+      "yOffset": 0.05,
+      "widthOffset": 0.34,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 90,
+      "imageHeight": 93,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_puppy",
+      "type": 3,
+      "trackPart": 9,
+      "xOffset": -1.38,
+      "yOffset": 0.51,
+      "widthOffset": 0.84,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 269,
+      "imageHeight": 131,
+      "triggerType": 0
+    }
+  ]
+}

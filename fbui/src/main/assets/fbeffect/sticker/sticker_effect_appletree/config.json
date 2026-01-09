@@ -1,0 +1,32 @@
+{
+  "HTSMGroupList": [
+    {
+      "dirName": "p_head",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 0,
+      "yOffset": -1.4,
+      "widthOffset": 1.24,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 484,
+      "imageHeight": 463,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_saihong",
+      "type": 3,
+      "trackPart": 4,
+      "xOffset": 0.02,
+      "yOffset": -0.05,
+      "widthOffset": 1.4,
+      "heightOffset": 0,
+      "imageNumber": 20,
+      "scene": 0,
+      "imageWidth": 392,
+      "imageHeight": 179,
+      "triggerType": 0
+    }
+  ]
+}

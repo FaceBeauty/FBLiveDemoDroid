@@ -1,0 +1,41 @@
+{
+    "mask": [
+
+        {
+            "name": "",
+            "category": "default",
+            "icon": "icon_cancel.png",
+            "download": 2
+        },
+        {
+            "name": "mask_purple",
+            "category": "default",
+            "icon": "mask_purple_icon.png",
+            "download": 2
+        },
+        {
+            "name": "mask_blue",
+            "category": "default",
+            "icon": "mask_blue_icon.png",
+            "download": 2
+        },
+        {
+            "name": "mask_green",
+            "category": "default",
+            "icon": "mask_green_icon.png",
+            "download": 2
+        },
+        {
+            "name": "mask_tiger_huang",
+            "category": "default",
+            "icon": "mask_tiger_huang_icon.png",
+            "download": 2
+        },
+        {
+            "name": "mask_tiger_bai",
+            "category": "default",
+            "icon": "mask_tiger_bai_icon.png",
+            "download": 2
+        }
+    ]
+}

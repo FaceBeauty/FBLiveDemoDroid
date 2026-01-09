@@ -1,0 +1,46 @@
+{
+  "HTSMGroupList": [
+    {
+      "dirName": "p_huahuan",
+      "type": 3,
+      "trackPart": 2,
+      "xOffset": 0.08,
+      "yOffset": -0.93,
+      "widthOffset": 1.07,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 521,
+      "imageHeight": 308,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_saihong",
+      "type": 3,
+      "trackPart": 4,
+      "xOffset": 0.06,
+      "yOffset": -0.05,
+      "widthOffset": 1.45,
+      "heightOffset": 0,
+      "imageNumber": 1,
+      "scene": 0,
+      "imageWidth": 426,
+      "imageHeight": 259,
+      "triggerType": 0
+    },
+    {
+      "dirName": "p_wa",
+      "type": 3,
+      "trackPart": 7,
+      "xOffset": -1.13,
+      "yOffset": 0.01,
+      "widthOffset": -0.03,
+      "heightOffset": 0,
+      "imageNumber": 20,
+      "scene": 0,
+      "imageWidth": 107,
+      "imageHeight": 145,
+      "triggerType": 0
+    }
+  ]
+}
