@@ -13,23 +13,23 @@ public class FBHairConfig {
     /**
      * hairstyling
      */
-    private List<FBHair> hair_style_list;
+    private List<FBHair> hairstyling;
 
     @Override public String toString() {
         return "FBHairConfig{" +
-                "fbHairs=" + hair_style_list.size() +
+                "fbHairs=" + hairstyling.size() +
                 "个}";
     }
 
     public List<FBHair> getHairs() {
-        return hair_style_list;
+        return hairstyling;
     }
 
     public FBHairConfig(List<FBHair> hairs) {
-        this.hair_style_list = hairs;
+        this.hairstyling = hairs;
     }
 
-    public void setHairs(List<FBHair> tiHairs) { this.hair_style_list = tiHairs;}
+    public void setHairs(List<FBHair> tiHairs) { this.hairstyling = tiHairs;}
 
     public static class FBHair {
 

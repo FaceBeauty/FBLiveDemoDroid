@@ -47,6 +47,7 @@ public class FBSelectedPosition {
     public static int POSITION_PORTRAIT = 0;
     public static int POSITION_FILTER = 0;
     public static int POSITION_BEAUTYMAKEUP = 0;
+    public static int POSITION_LIGHT_MAKEUP = 0;
     public static int POSITION_BODY = 0;
     public static float[] WATERMARK_POINTS = new float[8];
 

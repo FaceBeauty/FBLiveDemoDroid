@@ -1,0 +1,76 @@
+{
+  "makeup_eyeline": [
+    {
+      "idCard" : 4,
+      "category" : "eyeline",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "自然",
+      "title_en" : "Eyeline1",
+      "selected" : false,
+      "key" : "MAKEUP_EYELINE_ZIRAN",
+      "icon" : "makeup_eyeline_ziran_icon.png",
+      "name" : "ziran"
+    },
+    {
+      "idCard" : 4,
+      "category" : "eyeline",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "俏皮",
+      "title_en" : "Eyeline2",
+      "selected" : false,
+      "key" : "MAKEUP_EYELINE_QIAOPI",
+      "icon" : "makeup_eyeline_qiaopi_icon.png",
+      "name" : "qiaopi"
+    },
+    {
+      "idCard" : 4,
+      "category" : "eyeline",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "气质",
+      "title_en" : "Eyeline3",
+      "selected" : false,
+      "key" : "MAKEUP_EYELINE_QIZHI",
+      "icon" : "makeup_eyeline_qizhi_icon.png",
+      "name" : "qizhi"
+    },
+    {
+      "idCard" : 4,
+      "category" : "eyeline",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "妩媚",
+      "title_en" : "Eyeline4",
+      "selected" : false,
+      "key" : "MAKEUP_EYELINE_WUMEI",
+      "icon" : "makeup_eyeline_wumei_icon.png",
+      "name" : "wumei"
+    },
+    {
+      "idCard" : 4,
+      "category" : "eyeline",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "圆眼",
+      "title_en" : "Eyeline5",
+      "selected" : false,
+      "key" : "MAKEUP_EYELINE_YUANYAN",
+      "icon" : "makeup_eyeline_yuanyan_icon.png",
+      "name" : "yuanyan"
+    },
+    {
+      "idCard" : 4,
+      "category" : "eyeline",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "精灵",
+      "title_en" : "Eyeline6",
+      "selected" : false,
+      "key" : "MAKEUP_EYELINE_JINGLING",
+      "icon" : "makeup_eyeline_jingling_icon.png",
+      "name" : "jingling"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "StyleList": [
+    {
+        "beauty": [
+            {
+                "skin_whitening": 70,
+                "clear_smoothing": 80,
+                "skin_rosiness": 10,
+                "image_sharpness": 5,
+                "image_brightness": 0,
+                "dark_circle_lessening": 0,
+                "nasolabial_lessening": 0
+            }
+        ],
+        "reshape": [
+            {
+                "eye_enlarging": 60,
+                "eye_rounding": 0,
+                "eye_space_trimming": 0,
+                "eye_corner_trimming": 0,
+                "eye_corner_enlarging": 0,
+                "cheek_thinning": 30,
+                "cheek_v_shaping": 50,
+                "cheek_narrowing": 0,
+                "cheekbone_thinning": 0,
+                "jawbone_thinning": 0,
+                "temple_enlaring": 50,
+                "head_lessening": 0,
+                "face_lessening": 0,
+                "cheek_shortening": 0,
+                "nose_enlarging": 0,
+                "nose_thinning": 40,
+                "nose_apex_lessening": 0,
+                "nose_root_enlarging": 0,
+                "mouth_trimming": 0,
+                "mouth_smiling": 0,
+                "chin_trimming": 0,
+                "forehead_trimming": 0,
+                "philtrum_trimming": 0
+            }
+        ],
+        "beauty_filter": [
+            {
+                "tag": 0,
+                "name": "",
+                "value": 100
+            }
+        ],
+        "makeup": [
+            {
+               "tag": 0,
+               "name": "fuguhong1",
+               "type": 1,
+               "color": "fuguhong",
+               "value": 69
+            },
+            {
+               "tag": 1,
+               "name": "rouwuzong0",
+               "type": 0,
+               "color": "rouwuzong",
+               "value": 40
+            },
+            {
+               "tag": 2,
+               "name": "fenwei1",
+               "type": 1,
+               "color": "fenwei",
+               "value": 72
+            },
+            {
+               "tag": 3,
+               "name": "shanyaofen",
+               "type": 0,
+               "color": "shanyaofen",
+               "value": 68
+            },
+            {
+               "tag": 4,
+               "name": "qizhi",
+               "type": 0,
+               "color": "qizhi",
+               "value": 51
+            },
+            {
+               "tag": 5,
+               "name": "manhua",
+               "type": 0,
+               "color": "manhua",
+               "value": 28
+            },
+            {
+               "tag": 6,
+               "name": "",
+               "type": 0,
+               "color": "",
+               "value": 0
+            }
+        ]
+    }
+  ]
+}

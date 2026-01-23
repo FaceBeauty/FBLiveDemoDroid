@@ -1,0 +1,16 @@
+{
+    "MakeupEyeshadow":
+    [
+        {
+            "type": 1,
+            "is_mask": true,
+            "mask_name": "eyeshadow_mask",
+            "lut_name": "lut",
+            "is_lut": true,
+            "is_chartlet": true,
+            "chartlet_name": "overlay",
+            "is_sequin": true,
+            "sequin_name": "sequin"
+        }
+    ]
+}

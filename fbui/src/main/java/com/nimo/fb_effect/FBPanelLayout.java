@@ -35,6 +35,7 @@
   import com.nimo.fb_effect.fragment.FBARStickerFragment;
   import com.nimo.fb_effect.fragment.FBBeautyFragment;
   import com.nimo.fb_effect.fragment.FBWatermarkFragment;
+  import com.nimo.fb_effect.fragment.MakeUpItemFragment;
   import com.nimo.fb_effect.model.FBEventAction;
   import com.nimo.fb_effect.model.FBViewState;
   import com.nimo.fb_effect.model.FBState;
@@ -128,7 +129,6 @@
     public FBPanelLayout init(FragmentManager fm) {
       this.fm = fm;
       SharedPreferencesUtil.init(getContext());
-      Log.i("showWaterMark", "register: ");
       RxBus.get().register(this);
       FBConfigTools.getInstance().initFBConfigTools(getContext());
       checkVersion();
@@ -273,13 +273,10 @@
     }
 
 
-    @Subscribe(thread = EventThread.MAIN_THREAD,
-            tags = { @Tag(FBEventAction.ACTION_SHOW_WATERMARK_ITEM) })
-    public void showWaterMark(Object o) {
-      if (o.equals("waterMark")){
+    public void showWaterMark() {
         stickerView.setVisibility(VISIBLE);
+        shutterIv.setVisibility(GONE);
         switchModePanel(new FBWatermarkFragment(),"ar");
-      }
     }
     /**
      * 初始化数据源
@@ -524,7 +521,6 @@
                tags = { @Tag(FBEventAction.ACTION_CHANGE_PANEL) })
     public void showPanel(FBViewState viewState) {
       //根据切换的面板做对应的处理
-      Log.e("change_Panel:", viewState.name());
       switch (viewState) {
   //      case HIDE:
   //        hideContainer();
@@ -581,7 +577,6 @@
           Log.e("--change_Panel==AR--",viewState.name());
           //setTakePhotoAnim(-280);
           break;
-
       }
 
     }
@@ -794,8 +789,7 @@
      * @param fragment 被切换的碎片
      */
     private void replaceView(Fragment fragment, String which) {
-
-      FragmentTransaction ft = fm.beginTransaction();
+        FragmentTransaction ft = fm.beginTransaction();
       Bundle bundle = new Bundle();
       //设置数据
       bundle.putString("switch", which);

@@ -167,6 +167,14 @@
             "icon": "ht_sbl_icon.png",
             "category": "default",
             "download": 2
-        }
+        },
+      {
+        "title": "黑白",
+        "title_en": "Special21",
+        "name": "21",
+        "icon": "black_white.png",
+        "category": "default",
+        "download": 2
+      }
     ]
 }

@@ -1,0 +1,18 @@
+{
+    "ItemList": [
+        {
+            "dirName": "P_aixin",
+            "type": 0,
+            "trackPart": 0,
+            "xOffset": 0,
+            "yOffset": 0,
+            "widthOffset": 1,
+            "heightOffset": 1,
+            "imageNumber": 45,
+            "scene": 0,
+            "imageWidth": 500,
+            "imageHeight": 889,
+            "triggerType": 0
+        }
+    ]
+}

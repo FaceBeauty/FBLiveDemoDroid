@@ -100,6 +100,7 @@ public class FBBeautyFragment extends FBBaseFragment {
     //添加标题
     htTabs.clear();
     htTabs.add(requireContext().getString(R.string.beauty_skin));
+    htTabs.add(requireContext().getString(R.string.shape_face));
     htTabs.add(requireContext().getString(R.string.beauty_shape));
     htTabs.add(requireContext().getString(R.string.filter));
 
@@ -160,12 +161,14 @@ public class FBBeautyFragment extends FBBaseFragment {
         Log.e("position:", position + "");
         // 根据位置返回Fragment
         switch (position) {
-          case 1:
-            return new FBFaceTrimFragment();
-          case 2:
-            return new FBBeautyFilterFragment();
-          default:
-            return new FBBeautySkinFragment();
+            case 0:
+                return new FBBeautySkinFragment();
+            case 2:
+                return new FBFaceTrimFragment();
+             case 3:
+                 return new FBBeautyFilterFragment();
+             default:
+                return new FBFaceShapeFragment();
         }
       }
     };

@@ -1,0 +1,56 @@
+{
+  "makeup_lipstick" : [
+    {
+      "idCard" : 0,
+      "category" : "lipstick",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "雾面",
+      "title_en" : "matte",
+      "selected" : false,
+      "key" : "MAKEUP_LIPSTICK_MATTE",
+      "icon" : "makeup_lipstick_wumian_icon.png",
+      "name" : "wumian",
+      "type" : 0
+    },
+    {
+      "idCard" : 0,
+      "category" : "lipstick",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "咬唇",
+      "title_en" : "bitten",
+      "selected" : false,
+      "key" : "MAKEUP_LIPSTICK_BITTEN",
+      "icon" : "makeup_lipstick_yaochun_icon.png",
+      "name" : "yaochun",
+      "type" : 1
+    },
+    {
+      "idCard" : 0,
+      "category" : "lipstick",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "滋润",
+      "title_en" : "moist",
+      "selected" : false,
+      "key" : "MAKEUP_LIPSTICK_MOIST",
+      "icon" : "makeup_lipstick_zirun_icon.png",
+      "name" : "zirun",
+      "type" : 2
+    },
+    {
+      "idCard" : 0,
+      "category" : "lipstick",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "珠光",
+      "title_en" : "pearlescent",
+      "selected" : false,
+      "key" : "MAKEUP_LIPSTICK_PEARLESCENT",
+      "icon" : "makeup_lipstick_zhuguang_icon.png",
+      "name" : "zhuguang",
+      "type" : 3
+    }
+  ]
+}

@@ -19,4 +19,10 @@ public class DpUtils {
     final float scale = Resources.getSystem().getDisplayMetrics().density;
     return (int) (pxValue / scale + 0.5f);
   }
+    public static int dp2px(float dpValue) {
+        final float density = Resources.getSystem()
+                .getDisplayMetrics()
+                .density;
+        return (int) (dpValue * density + 0.5f);
+    }
 }

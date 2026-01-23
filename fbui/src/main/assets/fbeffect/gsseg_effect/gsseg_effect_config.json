@@ -1,0 +1,46 @@
+{
+  "gsseg_effect": [
+    {
+      "name": "upload_gsseg",
+      "category": "upload_gsseg",
+      "icon": "gsseg_shangchuan.png",
+      "download": 2
+    },
+    {
+      "name": "gsseg_effect_ancientry",
+      "category": "default",
+      "icon": "gsseg_effect_ancientry_icon.png",
+      "download": 2
+    },
+    {
+      "name": "gsseg_effect_shuzi",
+      "category": "default",
+      "icon": "gsseg_effect_shuzi_icon.png",
+      "download": 0
+    },
+    {
+      "name": "gsseg_effect_planet",
+      "category": "default",
+      "icon": "gsseg_effect_planet_icon.png",
+      "download": 0
+    },
+    {
+        "name": "gsseg_effect_blue",
+        "category": "default",
+        "icon": "gsseg_effect_blue_icon.png",
+        "download": 0
+    },
+    {
+        "name": "gsseg_effect_jiaju",
+        "category": "default",
+        "icon": "gsseg_effect_jiaju_icon.png",
+        "download": 0
+    },
+    {
+        "name": "gsseg_effect_keji",
+        "category": "default",
+        "icon": "gsseg_effect_keji_icon.png",
+        "download": 0
+    }
+  ]
+}

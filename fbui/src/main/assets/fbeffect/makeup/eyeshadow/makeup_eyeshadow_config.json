@@ -1,0 +1,88 @@
+{
+  "makeup_eyeshadow" : [
+    {
+      "idCard" : 3,
+      "category" : "eyeshadow",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "大地棕",
+      "title_en" : "Eyeshadow1",
+      "selected" : false,
+      "key" : "MAKEUP_EYESHADOW_DADIZONG",
+      "icon" : "makeup_eyeshadow_dadizong_icon.png",
+      "name" : "dadizong"
+    },
+    {
+      "idCard" : 3,
+      "category" : "eyeshadow",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "氛围感",
+      "title_en" : "Eyeshadow2",
+      "selected" : false,
+      "key" : "MAKEUP_EYESHADOW_FENWEIGAN",
+      "icon" : "makeup_eyeshadow_fenweigan_icon.png",
+      "name" : "fenweigan"
+    },
+    {
+      "idCard" : 3,
+      "category" : "eyeshadow",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "女神",
+      "title_en" : "Eyeshadow3",
+      "selected" : false,
+      "key" : "MAKEUP_EYESHADOW_NVSHEN",
+      "icon" : "makeup_eyeshadow_nvshen_icon.png",
+      "name" : "nvshen"
+    },
+    {
+      "idCard" : 3,
+      "category" : "eyeshadow",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "少女感",
+      "title_en" : "Eyeshadow4",
+      "selected" : false,
+      "key" : "MAKEUP_EYESHADOW_SHAONVGAN",
+      "icon" : "makeup_eyeshadow_shaonvgan_icon.png",
+      "name" : "shaonvgan"
+    },
+    {
+      "idCard" : 3,
+      "category" : "eyeshadow",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "闪耀粉",
+      "title_en" : "Eyeshadow5",
+      "selected" : false,
+      "key" : "MAKEUP_EYESHADOW_SHANYAOFEN",
+      "icon" : "makeup_eyeshadow_shanyaofen_icon.png",
+      "name" : "shanyaofen"
+    },
+    {
+      "idCard" : 3,
+      "category" : "eyeshadow",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "烟熏妆",
+      "title_en" : "Eyeshadow6",
+      "selected" : false,
+      "key" : "MAKEUP_EYESHADOW_YANXUNZHUANG",
+      "icon" : "makeup_eyeshadow_yanxunzhuang_icon.png",
+      "name" : "yanxunzhuang"
+    },
+    {
+      "idCard" : 3,
+      "category" : "eyeshadow",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "奶油粉棕",
+      "title_en" : "Eyeshadow7",
+      "selected" : false,
+      "key" : "MAKEUP_EYESHADOW_NAIYOUFENZONG",
+      "icon" : "makeup_eyeshadow_naiyoufenzong_icon.png",
+      "name" : "naiyoufenzong"
+    }
+  ]
+}

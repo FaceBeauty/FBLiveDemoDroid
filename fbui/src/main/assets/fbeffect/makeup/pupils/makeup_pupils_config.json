@@ -1,0 +1,76 @@
+{
+  "makeup_pupils" : [
+    {
+      "idCard" : 6,
+      "category" : "pupils",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "蜜糖",
+      "title_en" : "Pupils1",
+      "selected" : false,
+      "key" : "MAKEUP_PUPILS_MITANG",
+      "icon" : "makeup_pupils_mitang_icon.png",
+      "name" : "mitang"
+    },
+    {
+      "idCard" : 6,
+      "category" : "pupils",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "奶茶",
+      "title_en" : "Pupils2",
+      "selected" : false,
+      "key" : "MAKEUP_PUPILS_NAICHA",
+      "icon" : "makeup_pupils_naicha_icon.png",
+      "name" : "naicha"
+    },
+    {
+      "idCard" : 6,
+      "category" : "pupils",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "星空蓝",
+      "title_en" : "Pupils3",
+      "selected" : false,
+      "key" : "MAKEUP_PUPILS_XINGKONGLAN",
+      "icon" : "makeup_pupils_xingkonglan_icon.png",
+      "name" : "xingkonglan"
+    },
+    {
+      "idCard" : 6,
+      "category" : "pupils",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "灰绿",
+      "title_en" : "Pupils4",
+      "selected" : false,
+      "key" : "MAKEUP_PUPILS_MITANG",
+      "icon" : "makeup_pupils_huilv_icon.png",
+      "name" : "huilv"
+    },
+    {
+      "idCard" : 6,
+      "category" : "pupils",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "珍珠灰",
+      "title_en" : "Pupils5",
+      "selected" : false,
+      "key" : "MAKEUP_PUPILS_ZHENZHUHUI",
+      "icon" : "makeup_pupils_zhenzhuhui_icon.png",
+      "name" : "zhenzhuhui"
+    },    
+    {
+      "idCard" : 6,
+      "category" : "pupils",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "蜜桃粉",
+      "title_en" : "Pupils6",
+      "selected" : false,
+      "key" : "MAKEUP_PUPILS_MITAOFEN",
+      "icon" : "makeup_pupils_mitaofen_icon.png",
+      "name" : "mitaofen"
+    }
+  ]
+}

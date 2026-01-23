@@ -1,0 +1,124 @@
+{
+  "hairstyling": [
+    {
+      "title": "原图",
+      "title_en": "Original",
+      "name": "原图",
+      "id": 0,
+      "category": "default",
+      "icon":"icon_ranfa_yuantu",
+      "download":2
+
+    },
+    {
+      "title": "神秘紫",
+      "title_en": "Purple",
+      "name": "神秘紫",
+      "id": 1,
+      "category": "default",
+      "icon":"icon_ranfa_shenmizi",
+      "download":2
+    },
+    {
+      "title": "巧克力",
+      "title_en": "Chocolate",
+      "name": "巧克力",
+      "id": 2,
+      "category": "default",
+      "icon":"icon_ranfa_qiaokeli",
+      "download":2
+    },
+    {
+      "title": "青木棕",
+      "title_en": "Brown1",
+      "name": "青木棕",
+      "id": 3,
+      "category": "default",
+      "icon":"icon_ranfa_qingmuzong",
+      "download":2
+    },
+    {
+      "title": "焦糖棕",
+      "title_en": "Brown2",
+      "name": "焦糖棕",
+      "id": 4,
+      "category": "default",
+      "icon":"icon_ranfa_jiaotangzong",
+      "download":2
+    },
+    {
+      "title": "落日橘",
+      "title_en": "Orange1",
+      "name": "落日橘",
+      "id": 5,
+      "category": "default",
+      "icon":"icon_ranfa_luoriju",
+      "download":2
+    },
+    {
+      "title": "复古玫瑰",
+      "title_en": "Rose1",
+      "name": "复古玫瑰",
+      "id": 6,
+      "category": "default",
+      "icon":"icon_ranfa_fugumeigui",
+      "download":2
+    },
+    {
+      "title": "深玫瑰",
+      "title_en": "Rose2",
+      "name": "深玫瑰",
+      "id": 7,
+      "category": "default",
+      "icon":"icon_ranfa_shenmeigui",
+      "download":2
+    },
+    {
+      "title": "雾霾香芋",
+      "title_en": "Rose5",
+      "name": "雾霾香芋",
+      "id": 8,
+      "category": "default",
+      "icon":"icon_ranfa_wumaixiangyu",
+      "download":2
+    },
+    {
+      "title": "孔雀蓝",
+      "title_en": "Blue",
+      "name": "孔雀蓝",
+      "id": 9,
+      "category": "default",
+      "icon":"icon_ranfa_kongquelan",
+      "download":2
+    },
+    {
+      "title": "雾霾蓝灰",
+      "title_en": "Gray1",
+      "name": "雾霾蓝灰",
+      "id": 10,
+      "category": "default",
+      "icon":"icon_ranfa_wumailanhui",
+      "download":2
+    },
+    {
+      "title": "亚麻灰棕",
+      "title_en": "Gray2",
+      "name": "亚麻灰棕",
+      "id": 11,
+      "category": "default",
+      "icon":"icon_ranfa_yamahuizong",
+      "download":2
+    },
+    {
+      "title": "亚麻浅灰",
+      "title_en": "Gray3",
+      "name": "亚麻浅灰",
+      "id": 12,
+      "category": "default",
+      "icon":"icon_ranfa_yamaqianhui",
+      "download":2
+    }
+
+  ]
+
+}

@@ -68,7 +68,20 @@ public class FBResetDialog extends DialogFragment {
           //通知更新滑动条显示状态
           RxBus.get().post(FBEventAction.ACTION_SYNC_PROGRESS, "");
         }
+          //当前是脸型
+          if (FBState.currentSecondViewState == FBViewState.FACE_SHAPE) {
 
+              FBUICacheUtils.resetFaceShapeValue(getContext());
+              FBUICacheUtils.faceShapeResetEnable(false);
+              FBUICacheUtils.resetFaceTrimValue(getContext());
+
+              FBUICacheUtils.beautyFaceTrimResetEnable(false);
+              //通知刷新列表
+              RxBus.get().post(FBEventAction.ACTION_SYNC_RESET, "true");
+
+              //通知更新滑动条显示状态
+              RxBus.get().post(FBEventAction.ACTION_SYNC_PROGRESS, "");
+          }
         if (FBState.currentSecondViewState == FBViewState.BEAUTY_FACE_TRIM) {
           //当前是美型
           FBUICacheUtils.resetFaceTrimValue(getContext());
