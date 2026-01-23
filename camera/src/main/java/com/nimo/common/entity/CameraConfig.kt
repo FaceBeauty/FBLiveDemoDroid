@@ -52,7 +52,8 @@ class CameraConfig {
      * 单位：像素（px）
      */
     @JvmField
-    var cameraWidth: Int = 1280
+    var cameraWidth: Int = 1920
+//    var cameraWidth: Int = 1080
 
     /**
      * 相机输出分辨率高度
@@ -60,7 +61,8 @@ class CameraConfig {
      * 单位：像素（px）
      */
     @JvmField
-    var cameraHeight: Int = 720
+    var cameraHeight: Int = 1080
+//    var cameraHeight: Int = 1920
 
     /**
      * 是否开启相机支持的最高帧率

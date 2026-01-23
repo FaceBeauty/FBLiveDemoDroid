@@ -88,8 +88,10 @@ class CameraRenderer(gLSurfaceView: GLSurfaceView?, private val cameraConfig: Ca
         override fun onPreviewFrame(previewData: CameraPreviewData) {
             synchronized(mRenderInputDataLock) {
                 if (originalWidth != previewData.width || originalHeight != previewData.height) {
-                    originalWidth = previewData.width
-                    originalHeight = previewData.height
+//                    originalWidth = previewData.width
+//                    originalHeight = previewData.height
+                    originalWidth = previewData.height
+                    originalHeight = previewData.width
                     defaultMvpMatrix =
                         GlUtil.changeMvpMatrixCrop(surfaceViewWidth.toFloat(), surfaceViewHeight.toFloat(), originalHeight.toFloat(), originalWidth.toFloat())
                     smallViewMatrix = GlUtil.changeMvpMatrixCrop(90f, 160f, originalHeight.toFloat(), originalWidth.toFloat())
@@ -181,7 +183,7 @@ class CameraRenderer(gLSurfaceView: GLSurfaceView?, private val cameraConfig: Ca
     }
 
     override fun surfaceChanged(gl: GL10?, width: Int, height: Int) {
-        defaultMvpMatrix = GlUtil.changeMvpMatrixCrop(width.toFloat(), height.toFloat(), originalHeight.toFloat(), originalWidth.toFloat())
+        defaultMvpMatrix = GlUtil.changeMvpMatrixCrop(height.toFloat(), width.toFloat(), originalHeight.toFloat(), originalWidth.toFloat())
     }
 
     override fun updateTexImage() {
@@ -404,7 +406,7 @@ class CameraRenderer(gLSurfaceView: GLSurfaceView?, private val cameraConfig: Ca
         val texMatrix = TEXTURE_MATRIX.copyOf()
         if (isFrontCamera) {
             // 前置摄像头：270° + 水平镜像
-            Matrix.rotateM(texMatrix, 0, 270f, 0f, 0f, 1f)
+            Matrix.rotateM(texMatrix, 0, 180f, 0f, 0f, 1f)
         } else {
             // 后置摄像头：90°
             Matrix.rotateM(texMatrix, 0, 90f, 0f, 0f, 1f)

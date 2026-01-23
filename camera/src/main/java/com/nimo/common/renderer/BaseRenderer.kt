@@ -310,7 +310,7 @@ abstract class BaseRenderer(protected var gLSurfaceView: GLSurfaceView?, protect
         if (!init) {
             reInitFB(width, height, fbRotation)
         }
-
+        Log.d(TAG, "reInitFB: isTracking=="+ FBEffect.shareInstance().isTracking())
         return RenderOutputData(
             texture = processTexture(input, width, height),
             image = processImageBuffer(input, width, height)
@@ -374,11 +374,12 @@ abstract class BaseRenderer(protected var gLSurfaceView: GLSurfaceView?, protect
         FBEffect.shareInstance().loadAIProcessor(0)
         FBEffect.shareInstance().loadAIProcessor(1)
         FBEffect.shareInstance().setRenderEnable(true)
+        FBEffect.shareInstance().setFaceDetectionDistanceLevel(3)
 
         init = FBEffect.shareInstance().initTextureOESRenderer(
-            width,
             height,
-            fbRotation,
+            width,
+            FBRotationEnum.FBRotationClockwise0,
             isFrontCamera,
             5
         )
