@@ -18,22 +18,26 @@ public class FBState {
   public static FBViewState currentSliderViewState = FBViewState.BEAUTY_SKIN;
 
   //是否处于第三面板
-//  public static FBViewState currentThirdViewState = FBViewState.MAKEUP_OUT;
+  public static FBViewState currentThirdViewState = FBViewState.MAKEUP_OUT;
 
   // 当前选中了哪个美颜参数
   private static FBBeautyKey currentBeautySkin = FBBeautyKey.NONE;
 
   // 当前选中了哪个美型参数
   public static FBFaceTrim currentFaceTrim = FBFaceTrim.EYE_ENLARGING;
-
-
+  // 当前选中了哪个脸型
+  public static FBFaceShape currentFaceShape = FBFaceShape.CLASSIC;
   // 当前选中了哪个滤镜
   public static FBBeautyFilter currentStyleFilter = FBBeautyFilter.NO_FILTER;
   public static FBEffectFilterConfig.FBEffectFilter currentEffectFilter = FBEffectFilterConfig.FBEffectFilter.NO_FILTER;
   // 当前选中了哪个美发
   public static FBHairConfig.FBHair currentHair = FBHairConfig.FBHair.NO_HAIR;
+  public static LightMakeupConfig.LightMakeup currentLightMakeup = LightMakeupConfig.LightMakeup.NO_STYLE;
+
   public static FBFunnyFilterConfig.FBFunnyFilter currentFunnyFilter = FBFunnyFilterConfig.FBFunnyFilter.NO_FILTER;
   public static FBViewState currentAR = FBViewState.AR_PROP;
+  //美妆
+  public static MakeUpEnum currentMakeUp =MakeUpEnum.LIPSTICK;
   //释放黑色主题
   public static boolean isDark = true;
 
@@ -45,7 +49,12 @@ public class FBState {
     Log.e("设置当前的美肤",currentBeautySkin.name());
     FBState.currentBeautySkin = currentBeautySkin;
   }
-
+    public static FBFaceShape getCurrentFaceShape() {
+        return currentFaceShape;
+    }
+    public static void setCurrentFaceShape(FBFaceShape currentFaceShape) {
+        FBState.currentFaceShape = currentFaceShape;
+    }
   //释放
   public static void release() {
     currentViewState = FBViewState.HIDE;

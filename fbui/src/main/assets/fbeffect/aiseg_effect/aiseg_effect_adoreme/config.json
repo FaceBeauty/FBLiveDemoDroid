@@ -1,0 +1,16 @@
+{
+    "ItemList": [{
+        "dirName": "p_bg",
+        "type": 0,
+        "trackPart": 0,
+        "xOffset": 0,
+        "yOffset": 0,
+        "widthOffset": 1,
+        "heightOffset": 1,
+        "imageNumber": 50,
+        "scene": 1,
+        "imageWidth": 360,
+        "imageHeight": 640,
+        "triggerType": 0
+    }]
+}

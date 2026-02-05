@@ -1,0 +1,77 @@
+{
+  "makeup_eyelash" : [
+    {
+      "idCard" : 5,
+      "category" : "eyelash",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "自然",
+      "title_en" : "Eyelash1",
+      "selected" : false,
+      "key" : "MAKEUP_EYELASH_ZIRAN",
+      "icon" : "makeup_eyelash_ziran_icon.png",
+      "name" : "ziran"
+    },
+    {
+      "idCard" : 5,
+      "category" : "eyelash",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "盐系",
+      "title_en" : "Eyelash2",
+      "selected" : false,
+      "key" : "MAKEUP_EYELASH_YANXI",
+      "icon" : "makeup_eyelash_yanxi_icon.png",
+      "name" : "yanxi"
+    },
+    {
+      "idCard" : 5,
+      "category" : "eyelash",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "少女",
+      "title_en" : "Eyelash3",
+      "selected" : false,
+      "key" : "MAKEUP_EYELASH_SHAONV",
+      "icon" : "makeup_eyelash_shaonv_icon.png",
+      "name" : "shaonv"
+    },
+    {
+      "idCard" : 5,
+      "category" : "eyelash",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "美式甜心",
+      "title_en" : "Eyelash4",
+      "selected" : false,
+      "key" : "MAKEUP_EYELASH_MEISHITIANXIN",
+      "icon" : "makeup_eyelash_meishitianxin_icon.png",
+      "name" : "meishitianxin"
+    },
+    {
+      "idCard" : 5,
+      "category" : "eyelash",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "浓密",
+      "title_en" : "Eyelash5",
+      "selected" : false,
+      "key" : "MAKEUP_EYELASH_NONGMI",
+      "icon" : "makeup_eyelash_nongmi_icon.png",
+      "name" : "nongmi"
+    },
+    {
+      "idCard" : 5,
+      "category" : "eyelash",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "漫画",
+      "title_en" : "Eyelash6",
+      "selected" : false,
+      "key" : "MAKEUP_EYELASH_MANHUA",
+      "icon" : "makeup_eyelash_manhua_icon.png",
+      "name" : "manhua"
+    }
+    
+  ]
+}

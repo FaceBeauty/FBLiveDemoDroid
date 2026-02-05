@@ -1,0 +1,92 @@
+{
+    "light_makeup": [
+        {
+            "title": "取消",
+            "title_en": "Original",
+            "name": "",
+            "icon": "ic_style_none.png",
+            "category": "default",
+            "download": 2
+        },
+        {
+            "title": "白露",
+            "title_en": "Special1",
+            "name": "bailu",
+            "icon": "ic_style_bailu.png",
+            "category": "default",
+            "download": 2,
+            "defaultValue":70,
+            "sliderType":1
+        },
+        {
+            "title": "港风",
+            "title_en": "Special2",
+            "name": "gangfeng",
+            "icon": "ic_style_gangfeng.png",
+            "category": "default",
+            "download": 2,
+            "defaultValue":70,
+            "sliderType":1
+        },
+        {
+            "title": "狐系美人",
+            "title_en": "Special3",
+            "name": "huximeiren",
+            "icon": "ic_style_huximeiren.png",
+            "category": "default",
+            "download": 2,
+            "defaultValue":70,
+            "sliderType":1
+        },
+        {
+            "title": "冷调",
+            "title_en": "Special4",
+            "name": "lengdiao",
+            "icon": "ic_style_lengdiao.png",
+            "category": "default",
+            "download": 2,
+            "defaultValue":70,
+            "sliderType":1
+        },
+        {
+            "title": "女团",
+            "title_en": "Special5",
+            "name": "nvtuan",
+            "icon": "ic_style_nvtuan.png",
+            "category": "default",
+            "download": 2,
+            "defaultValue":70,
+            "sliderType":1
+        },
+        {
+            "title": "青春百花",
+            "title_en": "Special6",
+            "name": "qingchunbaihua",
+            "icon": "ic_style_qingchunbaihua.png",
+            "category": "default",
+            "download": 2,
+            "defaultValue":70,
+            "sliderType":1
+        },
+        {
+            "title": "轻甜妆",
+            "title_en": "Special7",
+            "name": "qingtianzhuang",
+            "icon": "ic_style_qingtianzhuang.png",
+            "category": "default",
+            "download": 2,
+            "defaultValue":70,
+            "sliderType":1
+        },
+        {
+            "title": "元气少女",
+            "title_en": "Special8",
+            "name": "yuanqishaonv",
+            "icon": "ic_style_yuanqishaonv.png",
+            "category": "default",
+            "download": 2,
+            "defaultValue":70,
+            "sliderType":1
+        }
+    ]
+}

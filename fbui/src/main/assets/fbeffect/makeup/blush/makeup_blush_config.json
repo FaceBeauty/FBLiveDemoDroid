@@ -1,0 +1,43 @@
+{
+  "makeup_blush" : [
+    {
+      "idCard" : 2,
+      "category" : "blush",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "苹果肌",
+      "title_en" : "Blush1",
+      "selected" : false,
+      "key" : "MAKEUP_BLUSH_APPLE_MUSCLE",
+      "icon" : "makeup_blush_pingguoji_icon.png",
+      "name" : "pingguoji",
+      "type" : 0
+    },
+    {
+      "idCard" : 2,
+      "category" : "blush",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "微醺",
+      "title_en" : "Blush2",
+      "selected" : false,
+      "key" : "MAKEUP_BLUSH_SLIGHTLY_DRUNK",
+      "icon" : "makeup_blush_weixun_icon.png",
+      "name" : "weixun",
+      "type" : 1
+    },
+    {
+      "idCard" : 2,
+      "category" : "blush",
+      "defaultValue" : 80,
+      "download" : 2,
+      "title" : "扇形",
+      "title_en" : "Blush3",
+      "selected" : false,
+      "key" : "MAKEUP_BLUSH_SECTOR",
+      "icon" : "makeup_blush_shanxing_icon.png",
+      "name" : "shanxing",
+      "type" : 2
+    }
+  ]
+}

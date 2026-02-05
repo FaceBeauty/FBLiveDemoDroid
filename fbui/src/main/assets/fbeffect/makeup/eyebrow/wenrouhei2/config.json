@@ -1,0 +1,14 @@
+{
+    "MakeupEyebrow":
+    [
+        {
+            "type": 1,
+            "is_mask": false,
+            "mask_name": "",
+            "is_lut": false,
+            "lut_name": "",
+            "is_chartlet": true,
+            "chartlet_name": "liuye"
+        }
+    ]
+}

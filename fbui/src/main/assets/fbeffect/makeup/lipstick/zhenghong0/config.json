@@ -1,0 +1,16 @@
+{
+    "MakeupLipstick":
+    [
+        {
+            "type": 0,
+            "is_mouth_open_mask": true,
+            "open_mask_name": "lip_matte_open",
+            "is_mouth_close_mask": true,
+            "close_mask_name": "lip_matte_close",
+            "is_lut": true,
+            "lut_name": "zhenghong",
+            "is_chartlet": false,
+            "chartlet_name": ""
+        }
+    ]
+}

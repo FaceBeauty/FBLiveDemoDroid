@@ -89,6 +89,10 @@ public class FBBeautyFilterItemViewBinder extends ItemViewBinder<FBBeautyFilterC
 
 
 //          FBEffect.shareInstance().setFilter(FBFilterEnum.FBFilterBeauty.getValue(), item.getName());
+          Log.i("gao", "onClick:FBFilterBeauty "+FBFilterEnum.FBFilterBeauty.getValue());
+          Log.i("gao", "onClick:getName "+item.getName());
+          Log.i("gao", "onClick:getBeautyFilterValue "+FBUICacheUtils.getBeautyFilterValue(item.getName()));
+          Log.i("gao", "onClick:============ ");
           FBEffect.shareInstance().setFilter(FBFilterEnum.FBFilterBeauty.getValue(), item.getName(),FBUICacheUtils.getBeautyFilterValue(item.getName()));
 
           FBState.currentStyleFilter = item;

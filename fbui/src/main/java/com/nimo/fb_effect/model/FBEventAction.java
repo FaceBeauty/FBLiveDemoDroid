@@ -23,6 +23,7 @@ public class FBEventAction {
   //更新当前选中的Item的点
   public static final String ACTION_SYNC_MASK_ITEM_CHANGED = "ACTION_SYNC_MASK_ITEM_CHANGED";
   public static final String ACTION_SYNC_HAIR_ITEM_CHANGED = "ACTION_SYNC_HAIR_ITEM_CHANGED";
+  public static final String ACTION_SYNC_LIGHT_MAKEUP_ITEM_CHANGED = "ACTION_SYNC_LIGHT_MAKEUP_ITEM_CHANGED";
   //更新当前选中的Item的点
   public static final String ACTION_SYNC_GIFT_ITEM_CHANGED = "ACTION_SYNC_GIFT_ITEM_CHANGED";
   //更新当前选中的Item的点

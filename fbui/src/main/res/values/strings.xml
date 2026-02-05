@@ -4,17 +4,23 @@
     <!-- 首页 -->
     <string name="beauty">Beauty</string>
     <string name="makeup">Makeup</string>
-
+    <string name="facial_special_effects">Facial special effects</string>
     <string name="gesture">Gesture</string>
     <string name="take_photo">TakePhoto</string>
-
+    <string name="square_face">Square Face</string>
+    <string name="long_face">Long Face</string>
+    <string name="round_face">Round Face</string>
+    <string name="thin_face">Thin Face</string>
     <string name="beauty_skin">Skin</string>
+    <string name="shape_face">FaceShape</string>
     <string name="beauty_shape">Reshape</string>
     <string name="beauty_hair">Hair</string>
     <string name="beauty_makeup">Makeup</string>
+    <string name="beauty_light_makeup">LightMakeup</string>
     <string name="beauty_makeup_style">MakeupStyle</string>
     <string name="beauty_body">Body</string>
     <string name="beauty_style">Style</string>
+    <string name="face_classic">Classic</string>
 
     <string name="reset">Restore</string>
     <string name="is_reset_to_default">Reset all parameters in this module to default?</string>
@@ -33,7 +39,6 @@
     <string name="sharpfeatured">Sharp facial contours</string>
     <string name="brightness">Brightness</string>
 
-    <string name="face_shape">FaceShape</string>
     <string name="eye_enlarging">Big eye</string>
     <string name="cheek_thinning">Thin face</string>
     <string name="cheek_narrowing">Narrow face</string>

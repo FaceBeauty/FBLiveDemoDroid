@@ -4,18 +4,23 @@
     <!-- 首页 -->
     <string name="beauty">美颜</string>
     <string name="makeup">轻彩妆</string>
+    <string name="facial_special_effects">人脸特效</string>
 
     <string name="gesture">手势特效</string>
     <string name="take_photo">拍照</string>
-
+    <string name="shape_face">脸型</string>
     <string name="beauty_skin">美肤</string>
     <string name="beauty_shape">美型</string>
     <string name="beauty_hair">美发</string>
     <string name="beauty_makeup">美妆</string>
+    <string name="beauty_light_makeup">轻彩妆</string>
     <string name="beauty_makeup_style">妆容推荐</string>
     <string name="beauty_body">美体</string>
     <string name="beauty_style">风格</string>
-
+    <string name="square_face">方脸专用</string>
+    <string name="long_face">长脸专用</string>
+    <string name="round_face">圆脸专用</string>
+    <string name="thin_face">瘦脸专用</string>
     <string name="reset">恢复</string>
     <string name="is_reset_to_default_all">是否将所有效果恢复到默认？</string>
     <string name="is_reset_to_default">是否将该模块的所有效果恢复到默认？</string>
@@ -126,6 +131,7 @@
     <string name="v_face">V 脸</string>
     <string name="forehead">额头</string>
     <string name="circle_eye">圆眼</string>
+    <string name="face_classic">经典</string>
 
 
 

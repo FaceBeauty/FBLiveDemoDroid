@@ -53,7 +53,10 @@ import com.nimo.facebeauty.widget.HtPermissionDialog;
 
 import com.nimo.facebeauty.widget.CaptureButtonView;
 import com.nimo.fb_effect.FBPanelLayout;
+import com.nimo.fb_effect.fragment.FBARMaskFragment;
+import com.nimo.fb_effect.fragment.FBARStickerFragment;
 import com.nimo.fb_effect.fragment.FBBeautyFragment;
+import com.nimo.fb_effect.fragment.LightMakeupFragment;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -103,7 +106,10 @@ public class CameraActivity extends AppCompatActivity{
     mPhotoRecordHelper = new PhotoRecordHelper(mOnPhotoRecordingListener);
     //todo --faceBeauty--start
       //添加美颜面板
-      FBBeautyFragment beautyFragment = new FBBeautyFragment();
+      FBBeautyFragment beautyFragment = new FBBeautyFragment();//美颜-美型-滤镜
+//      LightMakeupFragment lightMakeup = new LightMakeupFragment();//轻彩妆
+//      FBARMaskFragment arMaskFragent = new FBARMaskFragment(); //面具
+//      FBARStickerFragment arStickerFragment = new FBARStickerFragment(); //贴纸
       fragmentTransaction.add(R.id.bottom_container, beautyFragment);
       fragmentTransaction.commit();
       //todo --faceBeauty--end

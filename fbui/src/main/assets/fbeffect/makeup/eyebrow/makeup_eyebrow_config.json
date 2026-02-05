@@ -1,0 +1,83 @@
+{
+    "makeup_eyebrow" : [
+      {
+        "idCard" : 1,
+        "category" : "eyebrow",
+        "defaultValue" : 80,
+        "download" : 2,
+        "title" : "标准眉",
+        "title_en" : "eyebrow1",
+        "selected" : false,
+        "key" : "MAKEUP_EYEBROW_BIAOZHUNMEI",
+        "icon" : "makeup_eyebrow_biaozhunmei_icon.png",
+        "name" : "biaozhunmei",
+        "type" : 0
+      },
+      {
+        "idCard" : 1,
+        "category" : "eyebrow",
+        "defaultValue" : 80,
+        "download" : 2,
+        "title" : "野生眉",
+        "title_en" : "eyebrow2",
+        "selected" : false,
+        "key" : "MAKEUP_EYEBROW_YESHENGMEI",
+        "icon" : "makeup_eyebrow_yeshengmei_icon.png",
+        "name" : "yeshengmei",
+        "type" : 1
+      },
+      {
+        "idCard" : 1,
+        "category" : "eyebrow",
+        "defaultValue" : 80,
+        "download" : 2,
+        "title" : "柳叶眉",
+        "title_en" : "eyebrow3",
+        "selected" : false,
+        "key" : "MAKEUP_EYEBROW_LIUYEMEI",
+        "icon" : "makeup_eyebrow_liuyemei_icon.png",
+        "name" : "liuyemei",
+        "type" : 2
+      },
+      {
+        "idCard" : 1,
+        "category" : "eyebrow",
+        "defaultValue" : 80,
+        "download" : 2,
+        "title" : "欧式眉",
+        "title_en" : "eyebrow4",
+        "selected" : false,
+        "key" : "MAKEUP_EYEBROW_OUSHIMEI",
+        "icon" : "makeup_eyebrow_oushimei_icon.png",
+        "name" : "oushimei",
+        "type" : 3
+      },
+      {
+        "idCard" : 1,
+        "category" : "eyebrow",
+        "defaultValue" : 80,
+        "download" : 2,
+        "title" : "平眉",
+        "title_en" : "eyebrow5",
+        "selected" : false,
+        "key" : "MAKEUP_EYEBROW_PINGMEI",
+        "icon" : "makeup_eyebrow_pingzhimei_icon.png",
+        "name" : "pingmei",
+        "type" : 4
+      },
+      {
+        "idCard" : 1,
+        "category" : "eyebrow",
+        "defaultValue" : 80,
+        "download" : 2,
+        "title" : "剑眉",
+        "title_en" : "eyebrow6",
+        "selected" : false,
+        "key" : "MAKEUP_EYEBROW_JIANMEI",
+        "icon" : "makeup_eyebrow_jianmei_icon.png",
+        "name" : "jianmei",
+        "type" : 5
+      }
+    ]
+  }
+  
