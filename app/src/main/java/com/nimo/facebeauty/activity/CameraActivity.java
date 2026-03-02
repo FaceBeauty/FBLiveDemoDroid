@@ -289,7 +289,7 @@ public class CameraActivity extends AppCompatActivity{
         isTakePhoto = false;
         Log.d("摄像机方向", "onClick: "+mCameraRenderer.isFrontCamera());
 
-        mPhotoRecordHelper.sendRecordingData(outputData.getTexture().getTexId(), texMatrix, GlUtil.IDENTITY_MATRIX, outputData.getTexture().getWidth(), outputData.getTexture().getHeight(), mCameraRenderer.isFrontCamera());
+        mPhotoRecordHelper.sendRecordingData(outputData.getTexture().getTexId(), texMatrix, GlUtil.IDENTITY_MATRIX, outputData.getTexture().getHeight(), outputData.getTexture().getWidth(), mCameraRenderer.isFrontCamera());
         Log.d("takePhotoMessage", "recordingData: "+outputData.getTexture().getTexId() + "  "+ texMatrix + "   "+GlUtil.IDENTITY_MATRIX + "  " + outputData.getTexture().getWidth() + "  "+ outputData.getTexture().getHeight());
       }
     }

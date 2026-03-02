@@ -259,7 +259,9 @@ public class PhotoRecordHelper {
             Matrix matrix = new Matrix();
             if (isFrontCamera){
                 matrix.preScale(1f, -1f);
-                matrix.postRotate(-90);
+                //图片方向
+//                matrix.postRotate(-90);
+                matrix.postRotate(180);
             }else {
                 matrix.postRotate(90);
             }
