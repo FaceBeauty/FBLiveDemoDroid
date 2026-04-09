@@ -4,7 +4,7 @@
             "title": "原图",
             "title_en": "Original",
             "name": "0",
-            "icon": "ht_yuantu_icon.png",
+            "icon": "yuantu_icon.png",
             "category": "default",
             "download": 2
         },
@@ -12,7 +12,7 @@
             "title": "灵魂出窍",
             "title_en": "Special1",
             "name": "1",
-            "icon": "ht_lhcq_icon.png",
+            "icon": "lhcq_icon.png",
             "category": "default",
             "download": 2
         },
@@ -20,7 +20,7 @@
             "title": "黑白电影",
             "title_en": "Special2",
             "name": "2",
-            "icon": "ht_hbdy_icon.png",
+            "icon": "hbdy_icon.png",
             "category": "default",
             "download": 2
         },
@@ -28,7 +28,7 @@
             "title": "魔法镜面",
             "title_en": "Special3",
             "name": "3",
-            "icon": "ht_mfjm_icon.png",
+            "icon": "mfjm_icon.png",
             "category": "default",
             "download": 2
         },
@@ -36,7 +36,7 @@
             "title": "炫彩抖动",
             "title_en": "Special4",
             "name": "4",
-            "icon": "ht_xcdd_icon.png",
+            "icon": "xcdd_icon.png",
             "category": "default",
             "download": 2
         },
@@ -44,7 +44,7 @@
             "title": "头晕目眩",
             "title_en": "Special5",
             "name": "5",
-            "icon": "ht_tymx_icon.png",
+            "icon": "tymx_icon.png",
             "category": "default",
             "download": 2
         },
@@ -52,7 +52,7 @@
             "title": "动感分屏",
             "title_en": "Special6",
             "name": "6",
-            "icon": "ht_dgfp_icon.png",
+            "icon": "dgfp_icon.png",
             "category": "default",
             "download": 2
         },
@@ -60,7 +60,7 @@
             "title": "四宫格",
             "title_en": "Special7",
             "name": "7",
-            "icon": "ht_sfp_icon.png",
+            "icon": "sfp_icon.png",
             "category": "default",
             "download": 2
         },
@@ -68,7 +68,7 @@
             "title": "四屏镜像",
             "title_en": "Special8",
             "name": "8",
-            "icon": "ht_spjx_icon.png",
+            "icon": "spjx_icon.png",
             "category": "default",
             "download": 2
         },
@@ -76,7 +76,7 @@
             "title": "毛玻璃",
             "title_en": "Special9",
             "name": "9",
-            "icon": "ht_maoboli_icon.png",
+            "icon": "maoboli_icon.png",
             "category": "default",
             "download": 2
         },
@@ -84,7 +84,7 @@
             "title": "边界模糊",
             "title_en": "Special10",
             "name": "10",
-            "icon": "ht_bkmh_icon.png",
+            "icon": "bkmh_icon.png",
             "category": "default",
             "download": 2
         },
@@ -92,7 +92,7 @@
             "title": "模糊分屏",
             "title_en": "Special11",
             "name": "11",
-            "icon": "ht_mhfp_icon.png",
+            "icon": "mhfp_icon.png",
             "category": "default",
             "download": 2
         },
@@ -100,7 +100,7 @@
             "title": "瞬间石化",
             "title_en": "Special12",
             "name": "12",
-            "icon": "ht_sjsh_icon.png",
+            "icon": "sjsh_icon.png",
             "category": "default",
             "download": 2
         },
@@ -108,7 +108,7 @@
             "title": "轻彩抖动",
             "title_en": "Special13",
             "name": "13",
-            "icon": "ht_qcdd_icon.png",
+            "icon": "qcdd_icon.png",
             "category": "default",
             "download": 2
         },
@@ -116,7 +116,7 @@
             "title": "一键乐高",
             "title_en": "Special14",
             "name": "14",
-            "icon": "ht_yjlg_icon.png",
+            "icon": "yjlg_icon.png",
             "category": "default",
             "download": 2
         },
@@ -124,7 +124,7 @@
             "title": "九宫格",
             "title_en": "Special15",
             "name": "15",
-            "icon": "ht_jgg_icon.png",
+            "icon": "jgg_icon.png",
             "category": "default",
             "download": 2
         },
@@ -132,7 +132,7 @@
             "title": "反光镜",
             "title_en": "Special16",
             "name": "16",
-            "icon": "ht_fgj_icon.png",
+            "icon": "fgj_icon.png",
             "category": "default",
             "download": 2
         },
@@ -140,7 +140,7 @@
             "title": "虚拟镜像",
             "title_en": "Special17",
             "name": "17",
-            "icon": "ht_xnjx_icon.png",
+            "icon": "xnjx_icon.png",
             "category": "default",
             "download": 2
         },
@@ -148,7 +148,7 @@
             "title": "幻觉残影",
             "title_en": "Special18",
             "name": "18",
-            "icon": "ht_hjcy_icon.png",
+            "icon": "hjcy_icon.png",
             "category": "default",
             "download": 2
         },
@@ -156,7 +156,7 @@
             "title": "三分屏",
             "title_en": "Special19",
             "name": "19",
-            "icon": "ht_sanfp_icon.png",
+            "icon": "sanfp_icon.png",
             "category": "default",
             "download": 2
         },
@@ -164,7 +164,7 @@
             "title": "碎玻璃",
             "title_en": "Special20",
             "name": "20",
-            "icon": "ht_sbl_icon.png",
+            "icon": "sbl_icon.png",
             "category": "default",
             "download": 2
         },

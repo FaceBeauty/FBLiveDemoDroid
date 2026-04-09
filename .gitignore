@@ -5,3 +5,5 @@ local.properties
 .DS_Store
 build
 .externalNativeBuild
+/fbsdk
+

@@ -1,0 +1,22 @@
+{
+    "gesture_effect": [
+        {
+            "name": "gesture_effect_snow",
+            "category": "default",
+            "icon": "gesture_effect_snow_icon.png",
+            "download": 2
+        },
+        {
+            "name": "gesture_effect_yinghua",
+            "category": "default",
+            "icon": "gesture_effect_yinghua_icon.png",
+            "download": 2
+        },
+        {
+            "name": "gesture_effect_xingxing",
+            "category": "default",
+            "icon": "gesture_effect_xingxing_icon.png",
+            "download": 2
+        }
+    ]
+}

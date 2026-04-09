@@ -23,6 +23,28 @@
       "sliderType": 1
     },
     {
+      "title": "ccd",
+      "title_en": "ccd",
+      "name": "ccd",
+      "icon": "filter_CCD_icon",
+      "category": "default",
+      "download": 2,
+      "key": "FILTER_STYLE_CCD",
+      "defaultValue": 40,
+      "sliderType": 1
+    },
+    {
+      "title": "cutefun",
+      "title_en": "cutefun",
+      "name": "cutefun",
+      "icon": "filter_cutefun_icon",
+      "category": "default",
+      "download": 2,
+      "key": "FILTER_STYLE_cutefun",
+      "defaultValue": 40,
+      "sliderType": 1
+    },
+    {
       "title": "水光",
       "title_en": "Water1",
       "name": "shuiguang",

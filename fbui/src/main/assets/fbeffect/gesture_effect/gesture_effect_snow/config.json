@@ -1,0 +1,16 @@
+{
+    "ItemList": [{
+        "dirName": "p_snow",
+        "type": 4,
+        "trackPart": 0,
+        "xOffset": 0,
+        "yOffset": 0,
+        "widthOffset": 1,
+        "heightOffset": 1,
+        "imageNumber": 95,
+        "scene": 2,
+        "imageWidth": 400,
+        "imageHeight": 560,
+        "triggerType": 204
+    }]
+}
