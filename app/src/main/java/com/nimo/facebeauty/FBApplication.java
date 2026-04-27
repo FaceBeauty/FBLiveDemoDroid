@@ -18,7 +18,7 @@ public class FBApplication extends Application {
         super.onCreate();
 
         //todo ---Face Beauty start----
-        FBEffect.shareInstance().initFaceBeauty( this, "fbe396da4e7944a399eefe285db79cbd", new InitCallback() {
+        FBEffect.shareInstance().initFaceBeauty( this, "YOUR_APPID", new InitCallback() {
             @Override public void onInitSuccess() {
                 hasInit = true;
 //                new FBPanelLayout(FBApplication.this).init(null);
